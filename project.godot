@@ -11,6 +11,7 @@ config_version=4
 [application]
 
 config/name="Projevte_joc_final_Max_Bernat_Carmen_Didac"
+run/main_scene="res://Escenes/Personatges principals/Personatge1/Personatgeprincipal1.tscn"
 config/icon="res://Imatges/icon.png"
 
 [physics]
