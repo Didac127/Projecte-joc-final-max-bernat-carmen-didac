@@ -16,13 +16,16 @@ func _physics_process(delta):
 		#velocitat+=gravetat*delta
 		if Input.is_action_pressed("mou dreta"):
 			velocitat+=Vector2.RIGHT*velocitat_base
+			print("a")
 		if Input.is_action_pressed("mou esquerre"):
 			velocitat+=Vector2.LEFT*velocitat_base
+			print("b")
 		if is_on_floor() or is_on_wall():
 			salts = 2
-		if Input.is_action_just_pressed("mou endavant") and salts>0:
+		if Input.is_action_just_pressed("salta") and salts>0:
 			velocitat.y=velocitat_salt
 			salts-=1
+			print("c")
 
 	velocitat=move_and_slide(velocitat,Vector2.UP)
 	animacio(velocitat)
