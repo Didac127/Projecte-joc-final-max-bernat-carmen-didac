@@ -13,7 +13,7 @@ func _physics_process(delta):
 		time=time+1*delta
 	else:
 		velocitat.x=0
-		#velocitat+=gravetat*delta
+		velocitat+=gravetat*delta
 		if Input.is_action_pressed("mou dreta"):
 			velocitat+=Vector2.RIGHT*velocitat_base
 			print("a")
