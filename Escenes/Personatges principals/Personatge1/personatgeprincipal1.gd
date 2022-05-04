@@ -7,7 +7,6 @@ var gravetat=Vector2.DOWN*1000
 var velocitat_salt=-500
 var salts=1
 var time=0
-var monedes=0
 
 func _physics_process(delta):
 	if time<3:
@@ -41,11 +40,3 @@ func animacio(velocitat):
 		$AnimatedSprite.play("quiet")
 	if velocitat.y>0:
 		$AnimatedSprite.play("saltar")
-
-
-func _on_moneda1_body_entered(body):
-	monedes += 1 
-
-
-func _on_killzone_body_entered(body):
-	get_tree().change_scene_to()
