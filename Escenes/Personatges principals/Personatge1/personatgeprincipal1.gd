@@ -40,3 +40,15 @@ func animacio(velocitat):
 		$AnimatedSprite.play("quiet")
 	if velocitat.y>0:
 		$AnimatedSprite.play("saltar")
+
+
+func _on_Area2D_body_entered(body):
+	get_tree().change_scene("res://Escenes/escena de prova.tscn")
+
+
+func _on_Trampa_de_Punxes_body_entered(body):
+	get_tree().reload_current_scene()
+
+
+func _on_Trampa_de_Punxes_2_body_entered(body):
+	get_tree().reload_current_scene()
