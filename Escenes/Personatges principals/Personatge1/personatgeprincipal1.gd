@@ -6,7 +6,7 @@ var direccio=Vector2(1,1)
 var gravetat=Vector2.DOWN*1000
 var velocitat_salt=-500
 var salts=1
-var time=0
+var time=4
 
 func _physics_process(delta):
 	if time<3:
