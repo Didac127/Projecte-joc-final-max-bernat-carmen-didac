@@ -7,6 +7,7 @@ var gravetat=Vector2.DOWN*1000
 var velocitat_salt=-500
 var salts=1
 var time=0
+var dins_herba = false
 
 func _physics_process(delta):
 	if time<3:
@@ -26,7 +27,8 @@ func _physics_process(delta):
 			velocitat.y=velocitat_salt
 			salts-=1
 			print("c")
-
+	if dins_herba:
+		velocitat *= 0.5
 	velocitat=move_and_slide(velocitat,Vector2.UP)
 	animacio(velocitat)
 func animacio(velocitat):
@@ -40,3 +42,7 @@ func animacio(velocitat):
 		$AnimatedSprite.play("quiet")
 	if velocitat.y>0:
 		$AnimatedSprite.play("saltar")
+
+
+func _on_Area2D_body_entered(body):
+	dins_herba = true
