@@ -1,4 +1,4 @@
-[gd_scene load_steps=121 format=2]
+[gd_scene load_steps=120 format=2]
 
 [ext_resource path="res://Escenes/Personatges principals/Personatge1/PNG Sequences/Taunt/Wraith_03_Taunt_015.png" type="Texture" id=1]
 [ext_resource path="res://Escenes/Personatges principals/Personatge1/PNG Sequences/Taunt/Wraith_03_Taunt_013.png" type="Texture" id=2]
@@ -112,8 +112,10 @@
 [ext_resource path="res://Escenes/Personatges principals/Personatge1/PNG Sequences/Idle Blink/Wraith_03_Idle Blinking_003.png" type="Texture" id=110]
 [ext_resource path="res://Escenes/Personatges principals/Personatge1/PNG Sequences/Idle Blink/Wraith_03_Idle Blinking_001.png" type="Texture" id=111]
 [ext_resource path="res://Escenes/Personatges principals/Personatge1/PNG Sequences/Idle Blink/Wraith_03_Idle Blinking_011.png" type="Texture" id=112]
-[ext_resource path="res://Escenes/Personatges principals/Personatge1/PNG (Transparent)/flame_04.png" type="Texture" id=113]
+[ext_resource path="res://Escenes/Personatges principals/Personatge1/PNG (Transparent)/flame_03.png" type="Texture" id=113]
 [ext_resource path="res://Escenes/Personatges principals/Personatge1/PNG (Transparent)/flame_01.png" type="Texture" id=114]
+[ext_resource path="res://Escenes/Personatges principals/Personatge1/PNG (Transparent)/flame_02.png" type="Texture" id=115]
+[ext_resource path="res://Escenes/Personatges principals/Personatge1/PNG (Transparent)/flame_04.png" type="Texture" id=116]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -127,14 +129,14 @@ animations = [ {
 "name": "parpalleig inactiu",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 39 ), ExtResource( 34 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 35 ), ExtResource( 43 ), ExtResource( 42 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ) ],
+"loop": true,
+"name": "mal",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 81 ), ExtResource( 71 ), ExtResource( 67 ), ExtResource( 77 ), ExtResource( 69 ), ExtResource( 47 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 37 ), ExtResource( 46 ), ExtResource( 32 ), ExtResource( 31 ), ExtResource( 36 ), ExtResource( 38 ), ExtResource( 33 ) ],
 "loop": true,
 "name": "morint",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 94 ), ExtResource( 85 ), ExtResource( 86 ), ExtResource( 90 ), ExtResource( 87 ), ExtResource( 88 ), ExtResource( 89 ), ExtResource( 91 ), ExtResource( 92 ), ExtResource( 93 ), ExtResource( 83 ), ExtResource( 82 ), ExtResource( 84 ), ExtResource( 2 ), ExtResource( 5 ), ExtResource( 1 ), ExtResource( 3 ), ExtResource( 4 ) ],
-"loop": true,
-"name": "saltar",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 72 ), ExtResource( 78 ), ExtResource( 73 ), ExtResource( 70 ), ExtResource( 79 ), ExtResource( 80 ), ExtResource( 66 ), ExtResource( 65 ), ExtResource( 68 ), ExtResource( 74 ), ExtResource( 76 ), ExtResource( 75 ) ],
@@ -147,132 +149,72 @@ animations = [ {
 "name": "conjurar",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 94 ), ExtResource( 85 ), ExtResource( 86 ), ExtResource( 90 ), ExtResource( 87 ), ExtResource( 88 ), ExtResource( 89 ), ExtResource( 91 ), ExtResource( 92 ), ExtResource( 93 ), ExtResource( 83 ), ExtResource( 82 ), ExtResource( 84 ), ExtResource( 2 ), ExtResource( 5 ), ExtResource( 1 ), ExtResource( 3 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "saltar",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 16 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 19 ), ExtResource( 22 ), ExtResource( 20 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 21 ), ExtResource( 17 ), ExtResource( 15 ) ],
 "loop": true,
 "name": "quiet",
 "speed": 5.0
-}, {
-"frames": [ ExtResource( 39 ), ExtResource( 34 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 35 ), ExtResource( 43 ), ExtResource( 42 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ) ],
-"loop": true,
-"name": "mal",
-"speed": 5.0
 } ]
 
-[sub_resource type="Curve" id=2]
-max_value = 2.0
-_data = [ Vector2( 0, 0 ), 0.0, 0.0, 0, 0, Vector2( 0.23913, 1.08409 ), 3.73147, 3.73147, 0, 0, Vector2( 0.271739, 1.01136 ), 0.0221319, 0.0221319, 0, 0, Vector2( 1, 1 ), 0.0, 0.0, 0, 0 ]
+[sub_resource type="Animation" id=2]
+length = 1.86667
+loop = true
+step = 0.0666667
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.0666667, 0.133333, 0.2, 0.266667, 0.333333, 0.4, 0.466667, 0.533333, 0.6, 0.666667, 0.733333, 0.8, 0.866667, 0.933333, 1, 1.06667, 1.13333, 1.2, 1.26667, 1.33333, 1.4, 1.46667, 1.53333, 1.6, 1.66667, 1.73333, 1.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ ExtResource( 114 ), ExtResource( 115 ), ExtResource( 113 ), ExtResource( 116 ), ExtResource( 114 ), ExtResource( 115 ), ExtResource( 113 ), ExtResource( 116 ), ExtResource( 114 ), ExtResource( 115 ), ExtResource( 113 ), ExtResource( 116 ), ExtResource( 114 ), ExtResource( 115 ), ExtResource( 113 ), ExtResource( 116 ), ExtResource( 114 ), ExtResource( 115 ), ExtResource( 113 ), ExtResource( 116 ), ExtResource( 114 ), ExtResource( 115 ), ExtResource( 113 ), ExtResource( 116 ), ExtResource( 114 ), ExtResource( 115 ), ExtResource( 113 ), ExtResource( 116 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 264.313, 60.8125 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath(".:scale")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.333333, 1.86667 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1e-05, 1e-05 ), Vector2( 0.071, 0.071 ), Vector2( 0.071, 0.071 ) ]
+}
 
 [sub_resource type="Animation" id=3]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/path = NodePath("Particles2D:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ ExtResource( 113 ) ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath("Particles2D:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ Vector2( 0, 0 ) ]
-}
-tracks/2/type = "value"
-tracks/2/path = NodePath("Particles2D:scale")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ Vector2( 0.125, 0.125 ) ]
-}
-tracks/3/type = "bezier"
-tracks/3/path = NodePath("Particles2D:process_material:scale")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/keys = {
-"points": PoolRealArray( 0, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0 )
-}
-tracks/4/type = "value"
-tracks/4/path = NodePath("Particles2D:process_material:scale_curve:curve")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ SubResource( 2 ) ]
-}
-
-[sub_resource type="Animation" id=4]
 resource_name = "bola de foc"
-length = 3.0
 tracks/0/type = "value"
-tracks/0/path = NodePath("Particles2D:texture")
+tracks/0/path = NodePath(".:texture")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 1,
-"values": [ ExtResource( 114 ) ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath("Particles2D:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ Vector2( 251, 57 ) ]
-}
-tracks/2/type = "value"
-tracks/2/path = NodePath("Particles2D:process_material:scale_curve:curve")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
-"times": PoolRealArray( 1, 3 ),
+"times": PoolRealArray( 0, 0.1 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
-"values": [ SubResource( 2 ), SubResource( 2 ) ]
+"values": [ ExtResource( 114 ), ExtResource( 115 ) ]
 }
-
-[sub_resource type="CurveTexture" id=5]
-curve = SubResource( 2 )
-
-[sub_resource type="ParticlesMaterial" id=6]
-flag_disable_z = true
-gravity = Vector3( 0, 0, 0 )
-orbit_velocity = 0.0
-orbit_velocity_random = 0.0
-scale = 0.0
-scale_curve = SubResource( 5 )
 
 [node name="KinematicBody2D" type="KinematicBody2D"]
 script = ExtResource( 23 )
@@ -286,14 +228,14 @@ scale = Vector2( 0.190385, 0.183333 )
 frames = SubResource( 1 )
 animation = "quiet"
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/RESET = SubResource( 3 )
-"anims/bola de foc" = SubResource( 4 )
-
-[node name="Particles2D" type="Particles2D" parent="."]
-scale = Vector2( 0.125, 0.125 )
-amount = 1
-lifetime = 10.0
-speed_scale = 3.0
-process_material = SubResource( 6 )
+[node name="Sprite" type="Sprite" parent="."]
+modulate = Color( 1, 0, 0, 1 )
+self_modulate = Color( 1, 0, 0, 1 )
+show_behind_parent = true
+position = Vector2( 264.313, 60.8125 )
+scale = Vector2( 0.0760035, 0.0760035 )
 texture = ExtResource( 113 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite"]
+anims/RESET = SubResource( 2 )
+"anims/bola de foc" = SubResource( 3 )
