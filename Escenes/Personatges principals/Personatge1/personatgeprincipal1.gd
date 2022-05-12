@@ -46,3 +46,11 @@ func animacio(velocitat):
 
 func _on_Area2D_body_entered(body):
 	dins_herba = true
+
+
+func _on_cofre1_body_entered(body):
+	get_tree().change_scene("res://Escenes/Menu Principal.tscn")
+
+
+func _on_killzone_body_entered(body):
+	pass # Replace with function body.

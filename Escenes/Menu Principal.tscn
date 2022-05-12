@@ -65,8 +65,9 @@ text = ">"
 
 [node name="OptionName" type="Label" parent="CenterContainer/VBoxContainer/CenterContainer2/VBoxContainer/CenterContainer/HBoxContainer"]
 margin_left = 11.0
-margin_right = 60.0
-margin_bottom = 15.0
+margin_top = 7.0
+margin_right = 16.0
+margin_bottom = 8.0
 custom_fonts/font = SubResource( 3 )
 text = "Start"
 
