@@ -21,4 +21,4 @@ func _on_TextureButton_pressed():
 
 
 func _on_boto_exit_pressed():
-	pass # tencar el joc
+	get_tree().quit()
