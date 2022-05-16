@@ -119,14 +119,14 @@
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
+"frames": [ ExtResource( 72 ), ExtResource( 78 ), ExtResource( 73 ), ExtResource( 70 ), ExtResource( 79 ), ExtResource( 80 ), ExtResource( 66 ), ExtResource( 65 ), ExtResource( 68 ), ExtResource( 74 ), ExtResource( 76 ), ExtResource( 75 ) ],
+"loop": true,
+"name": "atacar",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 27 ), ExtResource( 28 ), ExtResource( 25 ), ExtResource( 29 ), ExtResource( 24 ), ExtResource( 30 ), ExtResource( 26 ), ExtResource( 9 ), ExtResource( 18 ), ExtResource( 11 ), ExtResource( 6 ), ExtResource( 10 ) ],
 "loop": true,
 "name": "caminar",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 81 ), ExtResource( 71 ), ExtResource( 67 ), ExtResource( 77 ), ExtResource( 69 ), ExtResource( 47 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 37 ), ExtResource( 46 ), ExtResource( 32 ), ExtResource( 31 ), ExtResource( 36 ), ExtResource( 38 ), ExtResource( 33 ) ],
-"loop": true,
-"name": "morint",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 50 ), ExtResource( 62 ), ExtResource( 49 ), ExtResource( 61 ), ExtResource( 55 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 51 ), ExtResource( 48 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 100 ), ExtResource( 106 ), ExtResource( 99 ), ExtResource( 101 ), ExtResource( 102 ), ExtResource( 103 ) ],
@@ -149,14 +149,14 @@ animations = [ {
 "name": "quiet",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 81 ), ExtResource( 71 ), ExtResource( 67 ), ExtResource( 77 ), ExtResource( 69 ), ExtResource( 47 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 37 ), ExtResource( 46 ), ExtResource( 32 ), ExtResource( 31 ), ExtResource( 36 ), ExtResource( 38 ), ExtResource( 33 ) ],
+"loop": true,
+"name": "morint",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 104 ), ExtResource( 111 ), ExtResource( 98 ), ExtResource( 110 ), ExtResource( 96 ), ExtResource( 97 ), ExtResource( 107 ), ExtResource( 108 ), ExtResource( 109 ), ExtResource( 105 ), ExtResource( 95 ), ExtResource( 112 ) ],
 "loop": true,
 "name": "parpalleig inactiu",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 72 ), ExtResource( 78 ), ExtResource( 73 ), ExtResource( 70 ), ExtResource( 79 ), ExtResource( 80 ), ExtResource( 66 ), ExtResource( 65 ), ExtResource( 68 ), ExtResource( 74 ), ExtResource( 76 ), ExtResource( 75 ) ],
-"loop": true,
-"name": "atacar",
 "speed": 5.0
 } ]
 
@@ -385,6 +385,7 @@ scale = Vector2( 0.190385, 0.183333 )
 frames = SubResource( 1 )
 animation = "quiet"
 frame = 5
+speed_scale = 2.0
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2( 264.313, 60.8125 )
@@ -405,7 +406,7 @@ anims/RESET = SubResource( 4 )
 
 [node name="Particles2D" type="Particles2D" parent="Area2D/AnimationPlayer"]
 position = Vector2( 264, 60.5 )
-scale = Vector2( 7.1e-07, 7.1e-07 )
+scale = Vector2( 1e-05, 1e-05 )
 amount = 12
 process_material = SubResource( 6 )
 
