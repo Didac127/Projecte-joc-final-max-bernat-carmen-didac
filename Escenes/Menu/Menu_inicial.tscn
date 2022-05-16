@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Escenes/Menu/tipografies/Titols/Ruritania.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Escenes/Menu/Menu_inicial.gd" type="Script" id=2]
 [ext_resource path="res://Escenes/Menu/tipografies/Text/Cardinal.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Escenes/Menu/Background.png" type="Texture" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 size = 140
@@ -16,6 +17,11 @@ font_data = ExtResource( 3 )
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 2 )
+
+[node name="Background" type="Sprite" parent="."]
+position = Vector2( 662, 314 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 4 )
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
 anchor_right = 1.0

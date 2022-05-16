@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Escenes/Menu/Menu_escollir_personatge/Wraith_01_Idle_000.png" type="Texture" id=1]
 [ext_resource path="res://Escenes/Menu/Menu_escollir_personatge/Wraith_03_Idle_000.png" type="Texture" id=2]
 [ext_resource path="res://Escenes/Menu/Menu_escollir_personatge/Wraith_02_Idle_000.png" type="Texture" id=3]
 [ext_resource path="res://Escenes/Menu/tipografies/Text/Cardinal-Alternate.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://Escenes/Menu/Background.png" type="Texture" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 48
@@ -12,6 +13,12 @@ font_data = ExtResource( 4 )
 [node name="Escollir_personatge" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 80, -326 )
+
+[node name="Background" type="Sprite" parent="."]
+position = Vector2( 662, 314 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 5 )
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
 anchor_right = 1.0
