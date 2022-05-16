@@ -1,4 +1,4 @@
-[gd_scene load_steps=123 format=2]
+[gd_scene load_steps=122 format=2]
 
 [ext_resource path="res://Escenes/Personatges principals/Personatge1/PNG Sequences/Taunt/Wraith_03_Taunt_015.png" type="Texture" id=1]
 [ext_resource path="res://Escenes/Personatges principals/Personatge1/PNG Sequences/Taunt/Wraith_03_Taunt_013.png" type="Texture" id=2]
@@ -22,7 +22,7 @@
 [ext_resource path="res://Escenes/Personatges principals/Personatge1/PNG Sequences/Idle/Wraith_03_Idle_006.png" type="Texture" id=20]
 [ext_resource path="res://Escenes/Personatges principals/Personatge1/PNG Sequences/Idle/Wraith_03_Idle_011.png" type="Texture" id=21]
 [ext_resource path="res://Escenes/Personatges principals/Personatge1/PNG Sequences/Idle/Wraith_03_Idle_005.png" type="Texture" id=22]
-[ext_resource path="res://Escenes/Personatges principals/Personatge1/personatgeprincipal1 bo.gd" type="Script" id=23]
+[ext_resource path="res://Escenes/Personatges principals/Personatge1/Personatgeprincipal1 bo.gd" type="Script" id=23]
 [ext_resource path="res://Escenes/Personatges principals/Personatge1/PNG Sequences/Walking/Wraith_03_Moving Forward_004.png" type="Texture" id=24]
 [ext_resource path="res://Escenes/Personatges principals/Personatge1/PNG Sequences/Walking/Wraith_03_Moving Forward_000.png" type="Texture" id=25]
 [ext_resource path="res://Escenes/Personatges principals/Personatge1/PNG Sequences/Walking/Wraith_03_Moving Forward_006.png" type="Texture" id=26]
@@ -119,9 +119,9 @@
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 27 ), ExtResource( 28 ), ExtResource( 25 ), ExtResource( 29 ), ExtResource( 24 ), ExtResource( 30 ), ExtResource( 26 ), ExtResource( 9 ), ExtResource( 18 ), ExtResource( 11 ), ExtResource( 6 ), ExtResource( 10 ) ],
+"frames": [ ExtResource( 50 ), ExtResource( 62 ), ExtResource( 49 ), ExtResource( 61 ), ExtResource( 55 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 51 ), ExtResource( 48 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 100 ), ExtResource( 106 ), ExtResource( 99 ), ExtResource( 101 ), ExtResource( 102 ), ExtResource( 103 ) ],
 "loop": true,
-"name": "caminar",
+"name": "conjurar",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 81 ), ExtResource( 71 ), ExtResource( 67 ), ExtResource( 77 ), ExtResource( 69 ), ExtResource( 47 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 37 ), ExtResource( 46 ), ExtResource( 32 ), ExtResource( 31 ), ExtResource( 36 ), ExtResource( 38 ), ExtResource( 33 ) ],
@@ -129,19 +129,9 @@ animations = [ {
 "name": "morint",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 50 ), ExtResource( 62 ), ExtResource( 49 ), ExtResource( 61 ), ExtResource( 55 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 51 ), ExtResource( 48 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 100 ), ExtResource( 106 ), ExtResource( 99 ), ExtResource( 101 ), ExtResource( 102 ), ExtResource( 103 ) ],
+"frames": [ ExtResource( 72 ), ExtResource( 78 ), ExtResource( 73 ), ExtResource( 70 ), ExtResource( 79 ), ExtResource( 80 ), ExtResource( 66 ), ExtResource( 65 ), ExtResource( 68 ), ExtResource( 74 ), ExtResource( 76 ), ExtResource( 75 ) ],
 "loop": true,
-"name": "conjurar",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 39 ), ExtResource( 34 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 35 ), ExtResource( 43 ), ExtResource( 42 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ) ],
-"loop": true,
-"name": "mal",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 94 ), ExtResource( 85 ), ExtResource( 86 ), ExtResource( 90 ), ExtResource( 87 ), ExtResource( 88 ), ExtResource( 89 ), ExtResource( 91 ), ExtResource( 92 ), ExtResource( 93 ), ExtResource( 83 ), ExtResource( 82 ), ExtResource( 84 ), ExtResource( 2 ), ExtResource( 5 ), ExtResource( 1 ), ExtResource( 3 ), ExtResource( 4 ) ],
-"loop": true,
-"name": "saltar",
+"name": "atacar",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 16 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 19 ), ExtResource( 22 ), ExtResource( 20 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 21 ), ExtResource( 17 ), ExtResource( 15 ) ],
@@ -154,15 +144,25 @@ animations = [ {
 "name": "parpalleig inactiu",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 72 ), ExtResource( 78 ), ExtResource( 73 ), ExtResource( 70 ), ExtResource( 79 ), ExtResource( 80 ), ExtResource( 66 ), ExtResource( 65 ), ExtResource( 68 ), ExtResource( 74 ), ExtResource( 76 ), ExtResource( 75 ) ],
+"frames": [ ExtResource( 94 ), ExtResource( 85 ), ExtResource( 86 ), ExtResource( 90 ), ExtResource( 87 ), ExtResource( 88 ), ExtResource( 89 ), ExtResource( 91 ), ExtResource( 92 ), ExtResource( 93 ), ExtResource( 83 ), ExtResource( 82 ), ExtResource( 84 ), ExtResource( 2 ), ExtResource( 5 ), ExtResource( 1 ), ExtResource( 3 ), ExtResource( 4 ) ],
 "loop": true,
-"name": "atacar",
+"name": "saltar",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 39 ), ExtResource( 34 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 35 ), ExtResource( 43 ), ExtResource( 42 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ) ],
+"loop": true,
+"name": "mal",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 27 ), ExtResource( 28 ), ExtResource( 25 ), ExtResource( 29 ), ExtResource( 24 ), ExtResource( 30 ), ExtResource( 26 ), ExtResource( 9 ), ExtResource( 18 ), ExtResource( 11 ), ExtResource( 6 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "caminar",
 "speed": 5.0
 } ]
 
 [sub_resource type="Animation" id=2]
 resource_name = "Bola de foc animació bona"
-length = 0.866667
+length = 1.06667
 loop = true
 step = 0.0666667
 tracks/0/type = "value"
@@ -172,7 +172,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.533333, 0.866667 ),
+"times": PoolRealArray( 0, 0.6, 1.06667 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
 "values": [ Vector2( 264.313, 60.8125 ), Vector2( 264.313, 60.8125 ), Vector2( 564.313, 60.813 ) ]
@@ -196,7 +196,7 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 0.333333, 0.866667 ),
+"times": PoolRealArray( 0, 0.333333, 1.06667 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
 "values": [ Vector2( 1e-05, 1e-05 ), Vector2( 8079.77, 7651.27 ), Vector2( 8079.77, 7651.27 ) ]
@@ -244,10 +244,10 @@ tracks/6/loop_wrap = true
 tracks/6/imported = false
 tracks/6/enabled = true
 tracks/6/keys = {
-"times": PoolRealArray( 0, 0.0666667, 0.133333, 0.2, 0.266667, 0.333333, 0.4, 0.466667, 0.533334, 0.6, 0.666667, 0.733334, 0.8, 0.866667 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.0666667, 0.133333, 0.2, 0.266667, 0.333333, 0.4, 0.466667, 0.533334, 0.6, 0.666667, 0.733334, 0.8, 0.866667, 0.933334, 1, 1.06667 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ ExtResource( 114 ), ExtResource( 115 ), ExtResource( 113 ), ExtResource( 116 ), ExtResource( 114 ), ExtResource( 115 ), ExtResource( 113 ), ExtResource( 116 ), ExtResource( 114 ), ExtResource( 115 ), ExtResource( 113 ), ExtResource( 116 ), ExtResource( 114 ), ExtResource( 115 ) ]
+"values": [ ExtResource( 114 ), ExtResource( 115 ), ExtResource( 113 ), ExtResource( 116 ), ExtResource( 114 ), ExtResource( 115 ), ExtResource( 113 ), ExtResource( 116 ), ExtResource( 114 ), ExtResource( 115 ), ExtResource( 113 ), ExtResource( 116 ), ExtResource( 114 ), ExtResource( 115 ), ExtResource( 113 ), ExtResource( 116 ), ExtResource( 114 ) ]
 }
 
 [sub_resource type="Animation" id=4]
@@ -265,7 +265,7 @@ tracks/0/keys = {
 "values": [ Vector2( 264.313, 60.8125 ) ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("AnimationPlayer/Particles2D:position")
+tracks/1/path = NodePath("Particles2D:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -364,12 +364,6 @@ tracks/0/keys = {
 "values": [ ExtResource( 114 ), ExtResource( 115 ) ]
 }
 
-[sub_resource type="ParticlesMaterial" id=6]
-flag_disable_z = true
-gravity = Vector3( 0, 98, 0 )
-orbit_velocity = 0.0
-orbit_velocity_random = 0.0
-
 [sub_resource type="CircleShape2D" id=5]
 radius = 1.8e+06
 
@@ -377,14 +371,13 @@ radius = 1.8e+06
 script = ExtResource( 23 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-polygon = PoolVector2Array( 214, 26, 210, 28, 207, 31, 204, 34, 202, 39, 202, 42, 200, 44, 198, 46, 197, 49, 197, 53, 198, 53, 199, 57, 199, 58, 201, 61, 203, 64, 204, 65, 208, 67, 209, 68, 209, 69, 209, 71, 208, 72, 207, 75, 206, 77, 206, 79, 207, 81, 209, 82, 211, 83, 216, 83, 219, 83, 222, 83, 226, 83, 229, 83, 232, 83, 234, 82, 236, 79, 238, 78, 240, 77, 242, 75, 243, 73, 244, 70, 245, 67, 246, 65, 245, 63, 246, 62, 247, 60, 248, 56, 249, 52, 249, 49, 249, 45, 249, 41, 247, 37, 244, 35, 240, 32, 236, 30, 234, 28, 231, 27, 227, 25, 224, 25, 222, 25, 216, 25 )
+polygon = PoolVector2Array( 213, 84, 232, 84, 245, 68, 245, 40, 233, 30, 218, 26, 201, 41, 199, 57, 206, 73 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 226, 60 )
 scale = Vector2( 0.190385, 0.183333 )
 frames = SubResource( 1 )
 animation = "quiet"
-frame = 5
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2( 264.313, 60.8125 )
@@ -403,11 +396,9 @@ texture = ExtResource( 114 )
 anims/RESET = SubResource( 4 )
 "anims/bola de foc" = SubResource( 3 )
 
-[node name="Particles2D" type="Particles2D" parent="Area2D/AnimationPlayer"]
+[node name="Particles2D" type="Particles2D" parent="Area2D"]
 position = Vector2( 264, 60.5 )
-scale = Vector2( 7.1e-07, 7.1e-07 )
-amount = 12
-process_material = SubResource( 6 )
+scale = Vector2( 0.071, 0.071 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 visible = false
