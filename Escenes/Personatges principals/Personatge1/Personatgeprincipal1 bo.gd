@@ -7,7 +7,7 @@ var gravetat=Vector2.DOWN*1000
 var velocitat_salt=-500
 var salts=1
 var paralitzat=true
-var atacar=false
+
 func _physics_process(delta):
 	if paralitzat==false:
 		pass
@@ -24,10 +24,9 @@ func _physics_process(delta):
 			velocitat.y=velocitat_salt
 			salts-=1
 		if Input.is_action_just_pressed("atacar"):
-			atacar=true
-			print("a")
-		if Input.is_action_just_released("atacar"):
-			atacar=false
+			print('AAAh')
+			crea_bola_foc()
+
 	velocitat=move_and_slide(velocitat,Vector2.UP)
 	animacio(velocitat)
 func animacio(velocitat):
@@ -41,6 +40,9 @@ func animacio(velocitat):
 		$AnimatedSprite.play("saltar") 
 	elif abs(velocitat.x)<0.1:
 		$AnimatedSprite.play("quiet")
-	if atacar==true:
-		$AnimatedSprite.play("atacar")
-		print("a")
+		
+func crea_bola_foc():
+	var escena_bola = preload("res://Escenes/Bola_Foc.tscn")
+	var nova_bola = escena_bola.instance()
+	nova_bola.global_position = $SortidaBola.global_position
+	add_child(nova_bola)

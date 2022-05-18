@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Escenes/Personatges principals/Personatge1/Personatgeprincipal1 bo.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Escenes/Bola_Foc.tscn" type="PackedScene" id=2]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="KinematicBody2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 433, 381 )
+
+[node name="BolaFoc" parent="." instance=ExtResource( 2 )]
