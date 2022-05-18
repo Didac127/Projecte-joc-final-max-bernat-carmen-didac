@@ -17,7 +17,7 @@ func _ready():
 
 
 func _on_TextureButton_pressed():
-	get_tree().change_scene("res://Escenes/Menu/Menu_escollir_personatge/Escollir_personatge.tscn")
+	get_tree().change_scene("res://Escenes/nivell Medieval.tscn")
 
 
 func _on_boto_exit_pressed():
