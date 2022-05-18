@@ -120,21 +120,6 @@ animations = [ {
 "name": "caminar",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 104 ), ExtResource( 111 ), ExtResource( 98 ), ExtResource( 110 ), ExtResource( 96 ), ExtResource( 97 ), ExtResource( 107 ), ExtResource( 108 ), ExtResource( 109 ), ExtResource( 105 ), ExtResource( 95 ), ExtResource( 112 ) ],
-"loop": true,
-"name": "parpalleig inactiu",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 39 ), ExtResource( 34 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 35 ), ExtResource( 43 ), ExtResource( 42 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ) ],
-"loop": true,
-"name": "mal",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 81 ), ExtResource( 71 ), ExtResource( 67 ), ExtResource( 77 ), ExtResource( 69 ), ExtResource( 47 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 37 ), ExtResource( 46 ), ExtResource( 32 ), ExtResource( 31 ), ExtResource( 36 ), ExtResource( 38 ), ExtResource( 33 ) ],
-"loop": true,
-"name": "morint",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 16 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 19 ), ExtResource( 22 ), ExtResource( 20 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 21 ), ExtResource( 17 ), ExtResource( 15 ) ],
 "loop": true,
 "name": "quiet",
@@ -145,14 +130,29 @@ animations = [ {
 "name": "atacar",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 50 ), ExtResource( 62 ), ExtResource( 49 ), ExtResource( 61 ), ExtResource( 55 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 51 ), ExtResource( 48 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 100 ), ExtResource( 106 ), ExtResource( 99 ), ExtResource( 101 ), ExtResource( 102 ), ExtResource( 103 ) ],
+"loop": true,
+"name": "conjurar",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 104 ), ExtResource( 111 ), ExtResource( 98 ), ExtResource( 110 ), ExtResource( 96 ), ExtResource( 97 ), ExtResource( 107 ), ExtResource( 108 ), ExtResource( 109 ), ExtResource( 105 ), ExtResource( 95 ), ExtResource( 112 ) ],
+"loop": true,
+"name": "parpalleig inactiu",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 39 ), ExtResource( 34 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 35 ), ExtResource( 43 ), ExtResource( 42 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ) ],
+"loop": true,
+"name": "mal",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 94 ), ExtResource( 85 ), ExtResource( 86 ), ExtResource( 90 ), ExtResource( 87 ), ExtResource( 88 ), ExtResource( 89 ), ExtResource( 91 ), ExtResource( 92 ), ExtResource( 93 ), ExtResource( 83 ), ExtResource( 82 ), ExtResource( 84 ), ExtResource( 2 ), ExtResource( 5 ), ExtResource( 1 ), ExtResource( 3 ), ExtResource( 4 ) ],
 "loop": true,
 "name": "saltar",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 50 ), ExtResource( 62 ), ExtResource( 49 ), ExtResource( 61 ), ExtResource( 55 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 51 ), ExtResource( 48 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 100 ), ExtResource( 106 ), ExtResource( 99 ), ExtResource( 101 ), ExtResource( 102 ), ExtResource( 103 ) ],
+"frames": [ ExtResource( 81 ), ExtResource( 71 ), ExtResource( 67 ), ExtResource( 77 ), ExtResource( 69 ), ExtResource( 47 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 37 ), ExtResource( 46 ), ExtResource( 32 ), ExtResource( 31 ), ExtResource( 36 ), ExtResource( 38 ), ExtResource( 33 ) ],
 "loop": true,
-"name": "conjurar",
+"name": "morint",
 "speed": 5.0
 } ]
 
@@ -160,10 +160,14 @@ animations = [ {
 script = ExtResource( 23 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-polygon = PoolVector2Array( 214, 26, 205, 33, 203, 36, 202, 37, 202, 39, 202, 41, 202, 42, 201, 43, 200, 44, 198, 46, 197, 48, 197, 49, 196, 50, 196, 51, 196, 53, 196, 54, 197, 56, 198, 58, 199, 60, 201, 61, 203, 64, 204, 65, 208, 67, 209, 68, 209, 69, 209, 71, 208, 72, 207, 75, 206, 77, 206, 79, 207, 81, 209, 82, 211, 83, 216, 83, 219, 84, 222, 83, 226, 84, 229, 84, 232, 83, 234, 82, 236, 79, 238, 78, 240, 77, 242, 75, 244, 73, 245, 71, 245, 67, 246, 65, 247, 62, 249, 59, 251, 57, 252, 55, 253, 52, 253, 48, 254, 45, 253, 42, 249, 36, 245, 34, 240, 32, 236, 30, 234, 28, 231, 27, 227, 25, 224, 25, 222, 25, 216, 25 )
+position = Vector2( -225, -60 )
+polygon = PoolVector2Array( 214, 26, 210, 28, 207, 31, 204, 34, 202, 39, 202, 42, 200, 44, 198, 46, 197, 49, 197, 53, 198, 53, 199, 56, 199, 58, 201, 61, 203, 64, 204, 65, 208, 67, 209, 67, 209, 69, 209, 71, 208, 72, 207, 75, 206, 77, 206, 79, 207, 81, 209, 82, 211, 83, 216, 83, 220, 83, 222, 83, 226, 83, 229, 83, 232, 83, 234, 82, 236, 79, 238, 78, 240, 77, 242, 75, 243, 73, 244, 70, 245, 67, 246, 65, 245, 63, 246, 62, 247, 60, 248, 56, 249, 52, 249, 49, 249, 45, 249, 41, 247, 37, 244, 35, 240, 32, 236, 30, 234, 28, 231, 27, 227, 25, 224, 25, 222, 25, 216, 25 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 225.5, 60.5 )
 scale = Vector2( 0.190385, 0.183333 )
 frames = SubResource( 1 )
-animation = "saltar"
+animation = "quiet"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+scale = Vector2( 0.190385, 0.183333 )
+current = true
