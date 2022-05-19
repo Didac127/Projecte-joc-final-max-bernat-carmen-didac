@@ -1,6 +1,6 @@
 extends Area2D
 
-var velocitat = 200
+var velocitat = 4500
 var timer_etapes=0
 
 # Called when the node enters the scene tree for the first time.
@@ -10,13 +10,10 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if timer_etapes==0:
-		scale += Vector2(0.3,0.3)*delta
-	if timer_etapes==1:
+		scale += Vector2(0.75,0.75)*delta
+	if timer_etapes>0 and timer_etapes<2:
 		position.x += velocitat * delta
-
-
-func _on_AnimationPlayer_animation_finished(anim_name):
-	if timer_etapes>1:
+	if timer_etapes>=2:
 		queue_free()
 
 

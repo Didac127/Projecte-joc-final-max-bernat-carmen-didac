@@ -13,7 +13,7 @@ func _physics_process(delta):
 		pass
 	else:
 		velocitat.x=0
-		#velocitat+=gravetat*delta
+		velocitat+=gravetat*delta
 		if Input.is_action_pressed("mou dreta"):
 			velocitat+=Vector2.RIGHT*velocitat_base
 		if Input.is_action_pressed("mou esquerre"):
@@ -24,7 +24,6 @@ func _physics_process(delta):
 			velocitat.y=velocitat_salt
 			salts-=1
 		if Input.is_action_just_pressed("atacar"):
-			print('AAAh')
 			crea_bola_foc()
 
 	velocitat=move_and_slide(velocitat,Vector2.UP)

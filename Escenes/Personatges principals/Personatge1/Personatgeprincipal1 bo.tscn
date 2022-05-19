@@ -169,7 +169,8 @@ animation = "quiet"
 speed_scale = 2.0
 
 [node name="SortidaBola" type="Position2D" parent="."]
-position = Vector2( 129, 0 )
+position = Vector2( 422, 170 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
+zoom = Vector2( 2.5, 2.5 )

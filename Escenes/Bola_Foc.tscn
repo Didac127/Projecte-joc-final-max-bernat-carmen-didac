@@ -18,6 +18,7 @@ animations = [ {
 radius = 197.003
 
 [node name="BolaFoc" type="Area2D"]
+position = Vector2( 200, 200 )
 scale = Vector2( 0.15, 0.15 )
 script = ExtResource( 5 )
 
