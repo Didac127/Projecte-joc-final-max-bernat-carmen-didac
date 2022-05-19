@@ -114,29 +114,9 @@
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 109 ), ExtResource( 49 ), ExtResource( 47 ), ExtResource( 90 ), ExtResource( 64 ), ExtResource( 60 ), ExtResource( 62 ), ExtResource( 78 ), ExtResource( 63 ), ExtResource( 91 ), ExtResource( 65 ), ExtResource( 83 ), ExtResource( 66 ), ExtResource( 93 ), ExtResource( 84 ), ExtResource( 85 ), ExtResource( 110 ), ExtResource( 111 ) ],
+"frames": [ ExtResource( 41 ), ExtResource( 44 ), ExtResource( 40 ), ExtResource( 92 ), ExtResource( 86 ), ExtResource( 50 ), ExtResource( 72 ), ExtResource( 77 ), ExtResource( 101 ), ExtResource( 53 ), ExtResource( 97 ), ExtResource( 94 ) ],
 "loop": true,
-"name": "Taunt",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 20 ), ExtResource( 31 ), ExtResource( 21 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 45 ), ExtResource( 42 ), ExtResource( 43 ) ],
-"loop": true,
-"name": "Ferir-se",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 79 ), ExtResource( 107 ), ExtResource( 99 ), ExtResource( 81 ), ExtResource( 88 ), ExtResource( 56 ), ExtResource( 61 ), ExtResource( 76 ), ExtResource( 57 ), ExtResource( 80 ), ExtResource( 95 ), ExtResource( 74 ), ExtResource( 102 ), ExtResource( 108 ), ExtResource( 100 ) ],
-"loop": true,
-"name": "Morir",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 22 ), ExtResource( 26 ), ExtResource( 29 ), ExtResource( 39 ), ExtResource( 38 ), ExtResource( 25 ), ExtResource( 3 ), ExtResource( 1 ), ExtResource( 23 ), ExtResource( 19 ), ExtResource( 24 ), ExtResource( 30 ) ],
-"loop": true,
-"name": "Atac",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 89 ), ExtResource( 70 ), ExtResource( 104 ), ExtResource( 67 ), ExtResource( 59 ), ExtResource( 58 ) ],
-"loop": true,
-"name": "Salt_inici",
+"name": "Inactiu",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 71 ), ExtResource( 68 ), ExtResource( 82 ), ExtResource( 105 ), ExtResource( 48 ), ExtResource( 75 ) ],
@@ -149,21 +129,41 @@ animations = [ {
 "name": "Caminar",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 22 ), ExtResource( 26 ), ExtResource( 29 ), ExtResource( 39 ), ExtResource( 38 ), ExtResource( 25 ), ExtResource( 3 ), ExtResource( 1 ), ExtResource( 23 ), ExtResource( 19 ), ExtResource( 24 ), ExtResource( 30 ) ],
+"loop": true,
+"name": "Atac",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 96 ), ExtResource( 51 ), ExtResource( 54 ), ExtResource( 106 ), ExtResource( 69 ), ExtResource( 52 ), ExtResource( 55 ), ExtResource( 87 ), ExtResource( 103 ), ExtResource( 98 ), ExtResource( 73 ), ExtResource( 46 ) ],
 "loop": true,
 "name": "Inactiu_parpadejar",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 41 ), ExtResource( 44 ), ExtResource( 40 ), ExtResource( 92 ), ExtResource( 86 ), ExtResource( 50 ), ExtResource( 72 ), ExtResource( 77 ), ExtResource( 101 ), ExtResource( 53 ), ExtResource( 97 ), ExtResource( 94 ) ],
+"frames": [ ExtResource( 79 ), ExtResource( 107 ), ExtResource( 99 ), ExtResource( 81 ), ExtResource( 88 ), ExtResource( 56 ), ExtResource( 61 ), ExtResource( 76 ), ExtResource( 57 ), ExtResource( 80 ), ExtResource( 95 ), ExtResource( 74 ), ExtResource( 102 ), ExtResource( 108 ), ExtResource( 100 ) ],
 "loop": true,
-"name": "Inactiu",
+"name": "Morir",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 89 ), ExtResource( 70 ), ExtResource( 104 ), ExtResource( 67 ), ExtResource( 59 ), ExtResource( 58 ) ],
+"loop": true,
+"name": "Salt_inici",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 109 ), ExtResource( 49 ), ExtResource( 47 ), ExtResource( 90 ), ExtResource( 64 ), ExtResource( 60 ), ExtResource( 62 ), ExtResource( 78 ), ExtResource( 63 ), ExtResource( 91 ), ExtResource( 65 ), ExtResource( 83 ), ExtResource( 66 ), ExtResource( 93 ), ExtResource( 84 ), ExtResource( 85 ), ExtResource( 110 ), ExtResource( 111 ) ],
+"loop": true,
+"name": "Taunt",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 20 ), ExtResource( 31 ), ExtResource( 21 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 45 ), ExtResource( 42 ), ExtResource( 43 ) ],
+"loop": true,
+"name": "Ferir-se",
 "speed": 5.0
 } ]
 
 [node name="KinematicBody2D" type="KinematicBody2D"]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-polygon = PoolVector2Array( -111, 195, -88, 206, 97, 206, 122, 173, 204, 123, 240, 101, 198, 17, 137, 27, 156, -26, 189, -122, 159, -182, 79, -217, -1, -225, -62, -217, -103, -192, -133, -153, -147, -88, -140, -25, -135, 15, -142, 57, -158, 92, -156, 153 )
+polygon = PoolVector2Array( -111, 195, -88, 206, 97, 206, 122, 173, 204, 123, 240, 101, 271, 37, 198, 17, 136, 40, 156, -26, 189, -122, 159, -182, 79, -217, -1, -225, -62, -217, -103, -192, -133, -153, -147, -88, -140, -25, -135, 15, -142, 57, -158, 92, -156, 153 )
 
 [node name="AnimatedSprite2" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
