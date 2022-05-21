@@ -6,10 +6,12 @@ var direccio=Vector2(1,1)
 var gravetat=Vector2.DOWN*1000
 var velocitat_salt=-500
 var salts=1
-var paralitzat=true
+var paralitzat=false
+var animacio_atacar=false
+
 
 func _physics_process(delta):
-	if paralitzat==false:
+	if paralitzat==true:
 		pass
 	else:
 		velocitat.x=0
@@ -24,24 +26,33 @@ func _physics_process(delta):
 			velocitat.y=velocitat_salt
 			salts-=1
 		if Input.is_action_just_pressed("atacar"):
-			crea_bola_foc()
+			if animacio_atacar==false:
+				animacio_atacar=true
+				crea_bola_foc()
+				
 
 	velocitat=move_and_slide(velocitat,Vector2.UP)
 	animacio(velocitat)
 func animacio(velocitat):
-	if velocitat.x>0:
+	if animacio_atacar==true:
+		$AnimatedSprite.play("atacar")
+	elif velocitat.y<0 or velocitat.y>0 and animacio_atacar==false:
+		$AnimatedSprite.play("saltar")
+	elif velocitat.x>0 and animacio_atacar==false:
 		$AnimatedSprite.play("caminar")
 		$AnimatedSprite.flip_h=false
-	elif velocitat.x<0:
+	elif velocitat.x<0 and animacio_atacar==false:
 		$AnimatedSprite.play("caminar")
 		$AnimatedSprite.flip_h=true
-	if velocitat.y>0:
-		$AnimatedSprite.play("saltar") 
-	elif abs(velocitat.x)<0.1:
+	else:
 		$AnimatedSprite.play("quiet")
-		
 func crea_bola_foc():
 	var escena_bola = preload("res://Escenes/Bola_Foc.tscn")
 	var nova_bola = escena_bola.instance()
-	nova_bola.global_position = $SortidaBola.global_position
+	nova_bola.position = global_position-Vector2(0,400)
 	add_child(nova_bola)
+
+
+func _on_AnimatedSprite_animation_finished():
+	if $AnimatedSprite.animation=="atacar":
+		animacio_atacar=false  

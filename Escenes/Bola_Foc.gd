@@ -1,5 +1,4 @@
 extends Area2D
-
 var velocitat = 4500
 var timer_etapes=0
 
