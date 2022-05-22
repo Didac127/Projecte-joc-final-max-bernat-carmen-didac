@@ -123,14 +123,19 @@ animations = [ {
 "name": "conjurar",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 27 ), ExtResource( 28 ), ExtResource( 25 ), ExtResource( 29 ), ExtResource( 24 ), ExtResource( 30 ), ExtResource( 26 ), ExtResource( 9 ), ExtResource( 18 ), ExtResource( 11 ), ExtResource( 6 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "caminar",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 78 ), ExtResource( 73 ), ExtResource( 70 ), ExtResource( 79 ), ExtResource( 80 ), ExtResource( 66 ), ExtResource( 65 ), ExtResource( 68 ), ExtResource( 74 ), ExtResource( 76 ) ],
+"loop": true,
+"name": "atacar",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 39 ), ExtResource( 34 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 35 ), ExtResource( 43 ), ExtResource( 42 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ) ],
 "loop": true,
 "name": "mal",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 81 ), ExtResource( 71 ), ExtResource( 67 ), ExtResource( 77 ), ExtResource( 69 ), ExtResource( 47 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 37 ), ExtResource( 46 ), ExtResource( 32 ), ExtResource( 31 ), ExtResource( 36 ), ExtResource( 38 ), ExtResource( 33 ) ],
-"loop": true,
-"name": "morint",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 104 ), ExtResource( 111 ), ExtResource( 98 ), ExtResource( 110 ), ExtResource( 96 ), ExtResource( 97 ), ExtResource( 107 ), ExtResource( 108 ), ExtResource( 109 ), ExtResource( 105 ), ExtResource( 95 ), ExtResource( 112 ) ],
@@ -143,14 +148,9 @@ animations = [ {
 "name": "saltar",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 27 ), ExtResource( 28 ), ExtResource( 25 ), ExtResource( 29 ), ExtResource( 24 ), ExtResource( 30 ), ExtResource( 26 ), ExtResource( 9 ), ExtResource( 18 ), ExtResource( 11 ), ExtResource( 6 ), ExtResource( 10 ) ],
+"frames": [ ExtResource( 81 ), ExtResource( 71 ), ExtResource( 67 ), ExtResource( 77 ), ExtResource( 69 ), ExtResource( 47 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 37 ), ExtResource( 46 ), ExtResource( 32 ), ExtResource( 31 ), ExtResource( 36 ), ExtResource( 38 ), ExtResource( 33 ) ],
 "loop": true,
-"name": "caminar",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 78 ), ExtResource( 73 ), ExtResource( 70 ), ExtResource( 79 ), ExtResource( 80 ), ExtResource( 66 ), ExtResource( 65 ), ExtResource( 68 ), ExtResource( 74 ), ExtResource( 76 ) ],
-"loop": true,
-"name": "atacar",
+"name": "morint",
 "speed": 5.0
 } ]
 
@@ -161,7 +161,7 @@ script = ExtResource( 23 )
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 position = Vector2( -1070, -278 )
 scale = Vector2( 4.74291, 4.6548 )
-polygon = PoolVector2Array( 210.372, 84.787, 222.086, 90.7546, 223.257, 90.7546, 237.313, 81.2065, 243.732, 67.0276, 246.684, 40.3884, 237.407, 28.3578, 223.07, 21.0535, 215.058, 20.1942, 201.986, 36.0918, 199.877, 49.4114, 206, 73 )
+polygon = PoolVector2Array( 210.372, 84.787, 216.229, 90.7546, 229.114, 90.7546, 237.313, 81.2065, 243.732, 67.0276, 246.684, 40.3884, 237.407, 28.3578, 223.07, 21.0535, 215.058, 20.1942, 201.986, 36.0918, 199.877, 49.4114, 206, 73 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
@@ -170,5 +170,9 @@ speed_scale = 2.0
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
+
+[node name="Position2D" type="Position2D" parent="."]
+position = Vector2( 0, -400 )
+scale = Vector2( 0.18, 0.18 )
 
 [connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]

@@ -47,10 +47,13 @@ func animacio(velocitat):
 	else:
 		$AnimatedSprite.play("quiet")
 func crea_bola_foc():
+	
 	var escena_bola = preload("res://Escenes/Bola_Foc.tscn")
 	var nova_bola = escena_bola.instance()
-	nova_bola.position = global_position-Vector2(0,400)
+	nova_bola.position =$Position2D.position 
 	add_child(nova_bola)
+	
+	
 
 
 func _on_AnimatedSprite_animation_finished():

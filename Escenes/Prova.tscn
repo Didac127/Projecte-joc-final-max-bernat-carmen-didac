@@ -7,16 +7,29 @@ extents = Vector2( 464.5, 21.5 )
 
 [node name="Node2D" type="Node2D"]
 
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2( 20, 71 )
+shape = SubResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D2"]
+margin_left = -444.0
+margin_top = 51.0
+margin_right = 484.0
+margin_bottom = 94.0
+
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2( 600, 0 )
+rotation = 1.5708
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 shape = SubResource( 1 )
 
 [node name="ColorRect" type="ColorRect" parent="StaticBody2D"]
-margin_left = -464.0
+margin_left = -465.0
 margin_top = -22.0
-margin_right = 464.0
+margin_right = 463.0
 margin_bottom = 21.0
 
 [node name="KinematicBody2D" parent="." instance=ExtResource( 1 )]
-position = Vector2( 65, -134 )
