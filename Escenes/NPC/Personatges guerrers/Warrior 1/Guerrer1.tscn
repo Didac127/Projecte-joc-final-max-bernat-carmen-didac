@@ -1,4 +1,4 @@
-[gd_scene load_steps=212 format=2]
+[gd_scene load_steps=214 format=2]
 
 [ext_resource path="res://Escenes/NPC/Personatges guerrers/Warrior 1/PNG/Hurt/0_Warrior_Hurt_000.png" type="Texture" id=1]
 [ext_resource path="res://Escenes/NPC/Personatges guerrers/Warrior 1/PNG/Died/0_Warrior_Died_029.png" type="Texture" id=2]
@@ -210,6 +210,7 @@
 [ext_resource path="res://Escenes/NPC/Personatges guerrers/Warrior 1/PNG/Walk/0_Warrior_Walk_027.png" type="Texture" id=208]
 [ext_resource path="res://Escenes/NPC/Personatges guerrers/Warrior 1/PNG/Walk/0_Warrior_Walk_029.png" type="Texture" id=209]
 [ext_resource path="res://Escenes/NPC/Personatges guerrers/Warrior 1/PNG/Walk/0_Warrior_Walk_028.png" type="Texture" id=210]
+[ext_resource path="res://Escenes/NPC/Personatges guerrers/Warrior 1/Guerrer1.gd" type="Script" id=211]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -221,16 +222,11 @@ animations = [ {
 "frames": [ ExtResource( 205 ), ExtResource( 181 ), ExtResource( 184 ), ExtResource( 206 ), ExtResource( 176 ), ExtResource( 199 ), ExtResource( 177 ), ExtResource( 183 ), ExtResource( 174 ), ExtResource( 204 ), ExtResource( 186 ), ExtResource( 175 ), ExtResource( 187 ), ExtResource( 182 ), ExtResource( 188 ), ExtResource( 193 ), ExtResource( 203 ), ExtResource( 189 ), ExtResource( 197 ), ExtResource( 190 ), ExtResource( 207 ), ExtResource( 191 ), ExtResource( 192 ), ExtResource( 194 ), ExtResource( 195 ), ExtResource( 196 ), ExtResource( 200 ), ExtResource( 208 ), ExtResource( 210 ), ExtResource( 209 ) ],
 "loop": true,
 "name": "Caminar",
-"speed": 5.0
+"speed": 10.0
 }, {
-"frames": [ ExtResource( 77 ), ExtResource( 74 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 76 ), ExtResource( 72 ), ExtResource( 73 ), ExtResource( 75 ), ExtResource( 63 ), ExtResource( 67 ), ExtResource( 54 ), ExtResource( 59 ), ExtResource( 64 ), ExtResource( 58 ), ExtResource( 60 ) ],
+"frames": [ ExtResource( 65 ), ExtResource( 66 ), ExtResource( 68 ), ExtResource( 69 ), ExtResource( 53 ), ExtResource( 55 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 78 ), ExtResource( 82 ), ExtResource( 85 ), ExtResource( 83 ), ExtResource( 84 ) ],
 "loop": true,
-"name": "Atac1",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 114 ), ExtResource( 92 ), ExtResource( 115 ), ExtResource( 111 ), ExtResource( 95 ), ExtResource( 104 ), ExtResource( 120 ), ExtResource( 91 ), ExtResource( 96 ), ExtResource( 88 ), ExtResource( 112 ), ExtResource( 97 ), ExtResource( 102 ), ExtResource( 116 ), ExtResource( 103 ), ExtResource( 117 ), ExtResource( 118 ), ExtResource( 93 ), ExtResource( 119 ), ExtResource( 110 ), ExtResource( 105 ), ExtResource( 113 ), ExtResource( 86 ), ExtResource( 99 ), ExtResource( 90 ), ExtResource( 87 ), ExtResource( 94 ), ExtResource( 100 ), ExtResource( 106 ), ExtResource( 107 ) ],
-"loop": true,
-"name": "Inactiu",
+"name": "Atac2",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 121 ), ExtResource( 138 ), ExtResource( 155 ), ExtResource( 143 ), ExtResource( 122 ), ExtResource( 123 ), ExtResource( 124 ), ExtResource( 179 ), ExtResource( 173 ), ExtResource( 198 ), ExtResource( 185 ), ExtResource( 201 ), ExtResource( 202 ), ExtResource( 178 ), ExtResource( 180 ) ],
@@ -243,6 +239,11 @@ animations = [ {
 "name": "Inactiu parpadejar",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 77 ), ExtResource( 74 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 76 ), ExtResource( 72 ), ExtResource( 73 ), ExtResource( 75 ), ExtResource( 63 ), ExtResource( 67 ), ExtResource( 54 ), ExtResource( 59 ), ExtResource( 64 ), ExtResource( 58 ), ExtResource( 60 ) ],
+"loop": true,
+"name": "Atac1",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 1 ), ExtResource( 25 ), ExtResource( 29 ), ExtResource( 10 ), ExtResource( 21 ), ExtResource( 13 ), ExtResource( 12 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 31 ), ExtResource( 101 ), ExtResource( 98 ), ExtResource( 89 ) ],
 "loop": true,
 "name": "Ferir-se",
@@ -253,17 +254,28 @@ animations = [ {
 "name": "Morir",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 65 ), ExtResource( 66 ), ExtResource( 68 ), ExtResource( 69 ), ExtResource( 53 ), ExtResource( 55 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 78 ), ExtResource( 82 ), ExtResource( 85 ), ExtResource( 83 ), ExtResource( 84 ) ],
+"frames": [ ExtResource( 114 ), ExtResource( 92 ), ExtResource( 115 ), ExtResource( 111 ), ExtResource( 95 ), ExtResource( 104 ), ExtResource( 120 ), ExtResource( 91 ), ExtResource( 96 ), ExtResource( 88 ), ExtResource( 112 ), ExtResource( 97 ), ExtResource( 102 ), ExtResource( 116 ), ExtResource( 103 ), ExtResource( 117 ), ExtResource( 118 ), ExtResource( 93 ), ExtResource( 119 ), ExtResource( 110 ), ExtResource( 105 ), ExtResource( 113 ), ExtResource( 86 ), ExtResource( 99 ), ExtResource( 90 ), ExtResource( 87 ), ExtResource( 94 ), ExtResource( 100 ), ExtResource( 106 ), ExtResource( 107 ) ],
 "loop": true,
-"name": "Atac2",
+"name": "Inactiu",
 "speed": 5.0
 } ]
 
-[node name="KinematicBody2D" type="KinematicBody2D"]
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 20, 28.5 )
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-polygon = PoolVector2Array( -83, 301, 83, 301, 107, 295, 144, 280, 185, 241, 202, 211, 202, 175, 195, 132, 177, 108, 173, 79, 185, 41, 209, 29, 227, -15, 239, -80, 224, -166, 180, -224, 120, -286, 65, -315, 3, -348, -44, -332, -115, -291, -184, -242, -226, -179, -258, -108, -237, -37, -223, 40, -176, 87, -148, 115, -157, 142, -168, 177, -156, 229, -137, 268, -97, 299 )
+[node name="KinematicBody2D" type="KinematicBody2D"]
+script = ExtResource( 211 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 0.0877273, 0.0895454 )
 frames = SubResource( 1 )
 animation = "Inactiu"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, -1.5 )
+shape = SubResource( 2 )
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2( 19, -1 )
+enabled = true
+cast_to = Vector2( 0, 30 )
