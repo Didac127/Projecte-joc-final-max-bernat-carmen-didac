@@ -113,11 +113,6 @@
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 16 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 19 ), ExtResource( 22 ), ExtResource( 20 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 15 ), ExtResource( 17 ), ExtResource( 21 ) ],
-"loop": true,
-"name": "quiet",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 81 ), ExtResource( 71 ), ExtResource( 67 ), ExtResource( 77 ), ExtResource( 69 ), ExtResource( 47 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 37 ), ExtResource( 46 ), ExtResource( 32 ), ExtResource( 31 ), ExtResource( 36 ), ExtResource( 38 ), ExtResource( 33 ) ],
 "loop": true,
 "name": "morint",
@@ -152,9 +147,14 @@ animations = [ {
 "loop": true,
 "name": "saltar",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 16 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 19 ), ExtResource( 22 ), ExtResource( 20 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 15 ), ExtResource( 17 ), ExtResource( 21 ) ],
+"loop": true,
+"name": "quiet",
+"speed": 5.0
 } ]
 
-[node name="KinematicBody2D" type="KinematicBody2D"]
+[node name="Personatge_principal" type="KinematicBody2D"]
 scale = Vector2( 0.18, 0.18 )
 script = ExtResource( 23 )
 

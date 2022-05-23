@@ -6,17 +6,18 @@ var velocitat=Vector2(0,0)
 var timer_etapes=0
 var pendent=0
 var eliminar_bola=false
+var posicio_inicial=Vector2(0,0)
 func _ready():
 	eliminar_bola=false
 	$AnimatedSprite.animation="foc"
 	$AnimatedSprite2.animation="foc"
 	$AnimatedSprite3.animation="foc"
 	scale=Vector2(0.001,0.001)
+	posicio_inicial=global_position
 	var posicio_mouse=get_global_mouse_position()
 	velocitat=posicio_mouse-global_position
 	pendent = velocitat.normalized()
-	velocitat=velocitat*11
-	print(velocitat)
+	velocitat=velocitat*2.2
 	
 func _process(delta):
 	if eliminar_bola==true:
@@ -24,7 +25,7 @@ func _process(delta):
 		$AnimatedSprite2.animation="explosio"
 		$AnimatedSprite3.animation="explosio"
 	elif timer_etapes==0:
-		scale += Vector2(0.75,0.75)*delta
+		scale += Vector2(0.15,0.15)*delta
 	elif timer_etapes>0 and timer_etapes<2:
 		position += velocitat*delta
 	elif timer_etapes>=2:
@@ -36,8 +37,10 @@ func _on_Timer_timeout():
 
 
 func _on_BolaFoc_body_entered(body):
-	
-	eliminar_bola=true
+	if global_position.x<(posicio_inicial.x+50) and global_position.x>(posicio_inicial.x-60) and global_position.y<(posicio_inicial.y+10) and global_position.y>(posicio_inicial.y-60):
+		pass
+	else:
+		eliminar_bola=true
 
 
 func _on_AnimatedSprite_animation_finished():

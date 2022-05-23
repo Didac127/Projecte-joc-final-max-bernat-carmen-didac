@@ -53,7 +53,7 @@ func crea_bola_foc():
 	nova_bola.global_position =$Position2D.global_position
 	if get_global_mouse_position()<global_position:
 		$AnimatedSprite.flip_h=true
-		nova_bola.global_position =-$Position2D.global_position
+		nova_bola.global_position =Vector2(-90,0)+$Position2D.global_position
 	else:
 		$AnimatedSprite.flip_h=false
 		nova_bola.global_position =$Position2D.global_position

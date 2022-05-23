@@ -11,15 +11,15 @@
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ) ],
-"loop": true,
-"name": "foc",
-"speed": 12.0
-}, {
 "frames": [ ExtResource( 8 ), ExtResource( 6 ), ExtResource( 7 ) ],
 "loop": true,
 "name": "explosio",
 "speed": 15.0
+}, {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "foc",
+"speed": 12.0
 } ]
 
 [sub_resource type="CircleShape2D" id=2]
@@ -33,19 +33,20 @@ script = ExtResource( 5 )
 modulate = Color( 1, 0, 0, 1 )
 frames = SubResource( 1 )
 animation = "foc"
+frame = 1
 playing = true
 
 [node name="AnimatedSprite3" type="AnimatedSprite" parent="."]
 modulate = Color( 1, 0, 0, 1 )
 frames = SubResource( 1 )
 animation = "foc"
-frame = 3
 playing = true
 
 [node name="AnimatedSprite2" type="AnimatedSprite" parent="."]
 modulate = Color( 1, 0, 0, 1 )
 frames = SubResource( 1 )
 animation = "foc"
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
