@@ -14,6 +14,10 @@ config/name="Projevte_joc_final_Max_Bernat_Carmen_Didac"
 run/main_scene="res://Escenes/Menu Principal.tscn"
 config/icon="res://Imatges/icon.png"
 
+[autoload]
+
+Global="*res://Global.gd"
+
 [input]
 
 "mou dreta"={

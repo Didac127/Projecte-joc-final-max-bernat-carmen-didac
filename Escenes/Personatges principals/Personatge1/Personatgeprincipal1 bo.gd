@@ -50,12 +50,18 @@ func crea_bola_foc():
 	
 	var escena_bola = preload("res://Escenes/Bola_Foc.tscn")
 	var nova_bola = escena_bola.instance()
-	nova_bola.position =$Position2D.position 
-	add_child(nova_bola)
+	nova_bola.global_position =$Position2D.global_position
+	if get_global_mouse_position()<global_position:
+		$AnimatedSprite.flip_h=true
+		nova_bola.global_position =-$Position2D.global_position
+	else:
+		$AnimatedSprite.flip_h=false
+		nova_bola.global_position =$Position2D.global_position
+	Global.Boles.add_child(nova_bola)
 	
 	
 
 
 func _on_AnimatedSprite_animation_finished():
 	if $AnimatedSprite.animation=="atacar":
-		animacio_atacar=false  
+		animacio_atacar=false 

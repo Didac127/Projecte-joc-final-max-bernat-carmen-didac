@@ -33,24 +33,23 @@ script = ExtResource( 5 )
 modulate = Color( 1, 0, 0, 1 )
 frames = SubResource( 1 )
 animation = "foc"
-frame = 3
 playing = true
 
 [node name="AnimatedSprite3" type="AnimatedSprite" parent="."]
 modulate = Color( 1, 0, 0, 1 )
 frames = SubResource( 1 )
 animation = "foc"
-frame = 2
+frame = 3
 playing = true
 
 [node name="AnimatedSprite2" type="AnimatedSprite" parent="."]
 modulate = Color( 1, 0, 0, 1 )
 frames = SubResource( 1 )
 animation = "foc"
-frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2( 10, 20 )
 shape = SubResource( 2 )
 

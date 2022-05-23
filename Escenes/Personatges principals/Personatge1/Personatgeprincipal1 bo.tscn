@@ -118,6 +118,16 @@ animations = [ {
 "name": "quiet",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 81 ), ExtResource( 71 ), ExtResource( 67 ), ExtResource( 77 ), ExtResource( 69 ), ExtResource( 47 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 37 ), ExtResource( 46 ), ExtResource( 32 ), ExtResource( 31 ), ExtResource( 36 ), ExtResource( 38 ), ExtResource( 33 ) ],
+"loop": true,
+"name": "morint",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 78 ), ExtResource( 73 ), ExtResource( 70 ), ExtResource( 79 ), ExtResource( 80 ), ExtResource( 66 ), ExtResource( 65 ), ExtResource( 68 ), ExtResource( 74 ), ExtResource( 76 ) ],
+"loop": true,
+"name": "atacar",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 50 ), ExtResource( 62 ), ExtResource( 49 ), ExtResource( 61 ), ExtResource( 55 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 51 ), ExtResource( 48 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 100 ), ExtResource( 106 ), ExtResource( 99 ), ExtResource( 101 ), ExtResource( 102 ), ExtResource( 103 ) ],
 "loop": true,
 "name": "conjurar",
@@ -126,11 +136,6 @@ animations = [ {
 "frames": [ ExtResource( 27 ), ExtResource( 28 ), ExtResource( 25 ), ExtResource( 29 ), ExtResource( 24 ), ExtResource( 30 ), ExtResource( 26 ), ExtResource( 9 ), ExtResource( 18 ), ExtResource( 11 ), ExtResource( 6 ), ExtResource( 10 ) ],
 "loop": true,
 "name": "caminar",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 78 ), ExtResource( 73 ), ExtResource( 70 ), ExtResource( 79 ), ExtResource( 80 ), ExtResource( 66 ), ExtResource( 65 ), ExtResource( 68 ), ExtResource( 74 ), ExtResource( 76 ) ],
-"loop": true,
-"name": "atacar",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 39 ), ExtResource( 34 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 35 ), ExtResource( 43 ), ExtResource( 42 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ) ],
@@ -146,11 +151,6 @@ animations = [ {
 "frames": [ ExtResource( 94 ), ExtResource( 85 ), ExtResource( 86 ), ExtResource( 90 ), ExtResource( 87 ), ExtResource( 88 ), ExtResource( 89 ), ExtResource( 91 ), ExtResource( 92 ), ExtResource( 93 ), ExtResource( 83 ), ExtResource( 82 ), ExtResource( 84 ), ExtResource( 2 ), ExtResource( 5 ), ExtResource( 1 ), ExtResource( 3 ), ExtResource( 4 ) ],
 "loop": true,
 "name": "saltar",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 81 ), ExtResource( 71 ), ExtResource( 67 ), ExtResource( 77 ), ExtResource( 69 ), ExtResource( 47 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 37 ), ExtResource( 46 ), ExtResource( 32 ), ExtResource( 31 ), ExtResource( 36 ), ExtResource( 38 ), ExtResource( 33 ) ],
-"loop": true,
-"name": "morint",
 "speed": 5.0
 } ]
 
@@ -172,7 +172,15 @@ speed_scale = 2.0
 current = true
 
 [node name="Position2D" type="Position2D" parent="."]
-position = Vector2( 0, -400 )
+position = Vector2( 250, 0 )
 scale = Vector2( 0.18, 0.18 )
+
+[node name="TextureProgress" type="TextureProgress" parent="."]
+margin_left = -2250.0
+margin_top = -1500.0
+margin_right = 2250.0
+margin_bottom = -1256.0
+
+[node name="Tween" type="Tween" parent="."]
 
 [connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]

@@ -14,12 +14,8 @@ func _ready():
 	scale=Vector2(0.001,0.001)
 	var posicio_mouse=get_global_mouse_position()
 	velocitat=posicio_mouse-global_position
-	pendent=velocitat.x*velocitat.x+velocitat.y*velocitat.y
-	pendent=int(pendent)
-	print(pendent)
-	#########pendent=pendent*2
-	velocitat=velocitat/pendent
-	velocitat=velocitat*450000
+	pendent = velocitat.normalized()
+	velocitat=velocitat*11
 	print(velocitat)
 	
 func _process(delta):
@@ -30,7 +26,7 @@ func _process(delta):
 	elif timer_etapes==0:
 		scale += Vector2(0.75,0.75)*delta
 	elif timer_etapes>0 and timer_etapes<2:
-		position += velocitat * delta
+		position += velocitat*delta
 	elif timer_etapes>=2:
 		queue_free()
 
