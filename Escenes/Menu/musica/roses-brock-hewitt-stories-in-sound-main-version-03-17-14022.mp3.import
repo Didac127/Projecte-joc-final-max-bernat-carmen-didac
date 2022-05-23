@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/roses-brock-hewitt-stories-in-sound-main-version-03-17-14022.mp3-8203a910a3d2087a1a2b11c42d33aed5.mp3str"
+
+[deps]
+
+source_file="res://Escenes/Menu/musica/roses-brock-hewitt-stories-in-sound-main-version-03-17-14022.mp3"
+dest_files=[ "res://.import/roses-brock-hewitt-stories-in-sound-main-version-03-17-14022.mp3-8203a910a3d2087a1a2b11c42d33aed5.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
