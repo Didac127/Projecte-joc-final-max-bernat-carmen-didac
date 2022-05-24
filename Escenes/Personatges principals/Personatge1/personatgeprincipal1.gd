@@ -46,7 +46,7 @@ func animacio(velocitat):
 
 
 func _on_Area2D_body_entered(body):
-	get_tree().change_scene("res://Escenes/escena de prova.tscn")
+	get_tree().change_scene("res://Escenes/Personatges principals/Personatge1/PNG Sequences/nivell1.tscn")
 	dins_herba = true
 
 func _on_Trampa_de_Punxes_body_entered(body):
