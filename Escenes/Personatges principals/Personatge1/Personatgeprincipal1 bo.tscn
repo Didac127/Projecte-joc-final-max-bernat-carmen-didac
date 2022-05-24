@@ -1,4 +1,4 @@
-[gd_scene load_steps=112 format=2]
+[gd_scene load_steps=113 format=2]
 
 [ext_resource path="res://Escenes/Personatges principals/Personatge1/PNG Sequences/Taunt/Wraith_03_Taunt_015.png" type="Texture" id=1]
 [ext_resource path="res://Escenes/Personatges principals/Personatge1/PNG Sequences/Taunt/Wraith_03_Taunt_013.png" type="Texture" id=2]
@@ -118,14 +118,9 @@ animations = [ {
 "name": "morint",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 27 ), ExtResource( 28 ), ExtResource( 25 ), ExtResource( 29 ), ExtResource( 24 ), ExtResource( 30 ), ExtResource( 26 ), ExtResource( 9 ), ExtResource( 18 ), ExtResource( 11 ), ExtResource( 6 ), ExtResource( 10 ) ],
+"frames": [ ExtResource( 94 ), ExtResource( 85 ), ExtResource( 86 ), ExtResource( 90 ), ExtResource( 87 ), ExtResource( 88 ), ExtResource( 89 ), ExtResource( 91 ), ExtResource( 92 ), ExtResource( 93 ), ExtResource( 83 ), ExtResource( 82 ), ExtResource( 84 ), ExtResource( 2 ), ExtResource( 5 ), ExtResource( 1 ), ExtResource( 3 ), ExtResource( 4 ) ],
 "loop": true,
-"name": "caminar",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 16 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 19 ), ExtResource( 22 ), ExtResource( 20 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 15 ), ExtResource( 17 ), ExtResource( 21 ) ],
-"loop": true,
-"name": "quiet",
+"name": "saltar",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 50 ), ExtResource( 62 ), ExtResource( 49 ), ExtResource( 61 ), ExtResource( 55 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 51 ), ExtResource( 48 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 100 ), ExtResource( 106 ), ExtResource( 99 ), ExtResource( 101 ), ExtResource( 102 ), ExtResource( 103 ) ],
@@ -133,9 +128,19 @@ animations = [ {
 "name": "conjurar",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 94 ), ExtResource( 85 ), ExtResource( 86 ), ExtResource( 90 ), ExtResource( 87 ), ExtResource( 88 ), ExtResource( 89 ), ExtResource( 91 ), ExtResource( 92 ), ExtResource( 93 ), ExtResource( 83 ), ExtResource( 82 ), ExtResource( 84 ), ExtResource( 2 ), ExtResource( 5 ), ExtResource( 1 ), ExtResource( 3 ), ExtResource( 4 ) ],
+"frames": [ ExtResource( 16 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 19 ), ExtResource( 22 ), ExtResource( 20 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 15 ), ExtResource( 17 ), ExtResource( 21 ) ],
 "loop": true,
-"name": "saltar",
+"name": "quiet",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 39 ), ExtResource( 34 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 35 ), ExtResource( 43 ), ExtResource( 42 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ) ],
+"loop": true,
+"name": "mal",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 27 ), ExtResource( 28 ), ExtResource( 25 ), ExtResource( 29 ), ExtResource( 24 ), ExtResource( 30 ), ExtResource( 26 ), ExtResource( 9 ), ExtResource( 18 ), ExtResource( 11 ), ExtResource( 6 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "caminar",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 104 ), ExtResource( 111 ), ExtResource( 98 ), ExtResource( 110 ), ExtResource( 96 ), ExtResource( 97 ), ExtResource( 107 ), ExtResource( 108 ), ExtResource( 109 ), ExtResource( 105 ), ExtResource( 95 ), ExtResource( 112 ) ],
@@ -147,21 +152,14 @@ animations = [ {
 "loop": true,
 "name": "atacar",
 "speed": 5.0
-}, {
-"frames": [ ExtResource( 39 ), ExtResource( 34 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 35 ), ExtResource( 43 ), ExtResource( 42 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ) ],
-"loop": true,
-"name": "mal",
-"speed": 5.0
 } ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 111.111, 163.889 )
 
 [node name="Personatge_principal" type="KinematicBody2D" groups=["Persoantge principal"]]
 scale = Vector2( 0.18, 0.18 )
 script = ExtResource( 23 )
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-position = Vector2( -1070, -278 )
-scale = Vector2( 4.74291, 4.6548 )
-polygon = PoolVector2Array( 210.372, 84.787, 216.229, 90.7546, 229.114, 90.7546, 237.313, 81.2065, 243.732, 67.0276, 246.684, 40.3884, 237.407, 28.3578, 223.07, 21.0535, 215.058, 20.1942, 201.986, 36.0918, 199.877, 49.4114, 206, 73 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
@@ -174,5 +172,10 @@ current = true
 [node name="Position2D" type="Position2D" parent="."]
 position = Vector2( 250, 0 )
 scale = Vector2( 0.18, 0.18 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -11.1111, -19.4444 )
+scale = Vector2( 1, 1 )
+shape = SubResource( 2 )
 
 [connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]
