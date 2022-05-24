@@ -3,7 +3,7 @@
 [ext_resource path="res://Imatges/Medieval/Medieval_tiles_free2.png" type="Texture" id=1]
 [ext_resource path="res://Imatges/Medieval/Medieval_props_free.png" type="Texture" id=2]
 [ext_resource path="res://Imatges/Medieval/Objects/window.png" type="Texture" id=3]
-[ext_resource path="res://Escenes/Personatges principals/Personatge1/Personatgeprincipal1.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Escenes/Personatgeprincipal1.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Imatges/Medieval/Objects/barrel.png" type="Texture" id=5]
 [ext_resource path="res://Imatges/Medieval/Objects/walls1.png" type="Texture" id=6]
 [ext_resource path="res://Imatges/Medieval/Objects/walls2.png" type="Texture" id=7]
