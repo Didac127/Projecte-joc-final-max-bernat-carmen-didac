@@ -3,7 +3,7 @@
 [ext_resource path="res://Imatges/Medieval/Medieval_tiles_free2.png" type="Texture" id=1]
 [ext_resource path="res://Imatges/Medieval/Medieval_props_free.png" type="Texture" id=2]
 [ext_resource path="res://Imatges/Medieval/Objects/window.png" type="Texture" id=3]
-[ext_resource path="res://Escenes/Personatgeprincipal1.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Escenes/Personatges principals/Personatge1/Personatgeprincipal1 bo.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Imatges/Medieval/Objects/barrel.png" type="Texture" id=5]
 [ext_resource path="res://Imatges/Medieval/Objects/walls1.png" type="Texture" id=6]
 [ext_resource path="res://Imatges/Medieval/Objects/walls2.png" type="Texture" id=7]
@@ -2522,8 +2522,8 @@ tile_data = PoolIntArray( -983022, 37, 0, -983021, 38, 0, -983020, 38, 0, -98301
 [node name="NPC" parent="." instance=ExtResource( 11 )]
 position = Vector2( 1680, 468 )
 
-[node name="KinematicBody2D" parent="." instance=ExtResource( 4 )]
-position = Vector2( 1790, 103 )
+[node name="Personatge_principal" parent="." instance=ExtResource( 4 )]
+position = Vector2( 628, -12 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
 show_behind_parent = true
@@ -2760,7 +2760,3 @@ tile_set = SubResource( 65 )
 cell_size = Vector2( 48, 48 )
 format = 1
 tile_data = PoolIntArray( -917488, 2, 0, -917487, 3, 0, -917486, 4, 0, -917474, 6, 0, -917473, 7, 0, -917472, 10, 0, -851955, 2, 0, -851954, 3, 0, -851953, 4, 0, -851952, 0, 0, -851951, 1, 0, -851937, 8, 0, -851936, 9, 0, -851935, 6, 0, -851934, 7, 0, -851933, 10, 0, -786422, 2, 0, -786421, 3, 0, -786420, 4, 0, -786419, 0, 0, -786418, 1, 0, -786398, 8, 0, -786397, 9, 0, -786396, 6, 0, -786395, 7, 0, -786394, 10, 0, -720889, 2, 0, -720888, 3, 0, -720887, 4, 0, -720886, 0, 0, -720885, 1, 0, -720859, 8, 0, -720858, 9, 0, -720857, 6, 0, -720856, 7, 0, -720855, 10, 0, -655356, 2, 0, -655355, 3, 0, -655354, 4, 0, -655353, 0, 0, -655352, 1, 0, -655320, 8, 0, -655319, 9, 0, -655318, 6, 0, -655317, 7, 0, -655316, 10, 0, -589823, 2, 0, -589822, 3, 0, -589821, 4, 0, -589820, 0, 0, -589819, 1, 0, -589781, 8, 0, -589780, 9, 0, -589779, 6, 0, -589778, 7, 0, -589777, 10, 0, -524287, 29, 0, -524286, 1, 0, -524242, 8, 0, -524241, 27, 0, -458751, 28, 0, -458705, 26, 0, -393215, 28, 0, -393169, 26, 0, -327679, 28, 0, -327633, 26, 0, -262143, 28, 0, -262097, 26, 0, -196607, 28, 0, -196561, 26, 0, -131071, 28, 0, -131070, 28, 0, -131025, 26, 0, -65535, 28, 0, -65534, 28, 0, -65489, 26, 0, 1, 28, 0, 2, 28, 0, 47, 26, 0, 65537, 28, 0, 65538, 28, 0, 65583, 26, 0, 131073, 28, 0, 131074, 28, 0, 131119, 26, 0, 196609, 28, 0, 196610, 28, 0, 196650, 32, 0, 196651, 16, 0, 196652, 16, 0, 196653, 16, 0, 196654, 16, 0, 196655, 16, 0, 262145, 28, 0, 262146, 28, 0, 262185, 32, 0, 262186, 31, 0, 262191, 26, 0, 327681, 28, 0, 327682, 28, 0, 327720, 32, 0, 327721, 31, 0, 327724, 29, 0, 327727, 27, 0, 393217, 28, 0, 393255, 32, 0, 393256, 31, 0, 393260, 28, 0, 393263, 26, 0, 458753, 28, 0, 458790, 32, 0, 458791, 31, 0, 458796, 28, 0, 458799, 26, 0, 524289, 28, 0, 524325, 32, 0, 524326, 31, 0, 524332, 28, 0, 524335, 26, 0, 589825, 28, 0, 589849, 23, 0, 589860, 32, 0, 589861, 31, 0, 589868, 28, 0, 589871, 26, 0, 655361, 24, 0, 655362, 25, 0, 655363, 25, 0, 655364, 23, 0, 655365, 25, 0, 655366, 25, 0, 655367, 25, 0, 655368, 25, 0, 655369, 23, 0, 655370, 23, 0, 655371, 25, 0, 655372, 25, 0, 655373, 25, 0, 655374, 25, 0, 655375, 25, 0, 655376, 25, 0, 655377, 25, 0, 655378, 25, 0, 655379, 25, 0, 655380, 23, 0, 655381, 25, 0, 655382, 25, 0, 655383, 25, 0, 655384, 25, 0, 655385, 25, 0, 655386, 25, 0, 655387, 23, 0, 655388, 25, 0, 655389, 25, 0, 655390, 25, 0, 655391, 23, 0, 655392, 23, 0, 655393, 25, 0, 655394, 25, 0, 655395, 25, 0, 655396, 31, 0, 655404, 24, 0, 655405, 23, 0, 655406, 25, 0, 655407, 22, 0 )
-
-[connection signal="body_entered" from="PortaFinal" to="KinematicBody2D" method="_on_Area2D_body_entered"]
-[connection signal="body_entered" from="Trampa de Punxes" to="KinematicBody2D" method="_on_Trampa_de_Punxes_body_entered"]
-[connection signal="body_entered" from="Trampa de Punxes 2" to="KinematicBody2D" method="_on_Trampa_de_Punxes_2_body_entered"]
