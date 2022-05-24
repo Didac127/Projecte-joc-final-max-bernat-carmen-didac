@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/no-time-to-die-hartzmann-main-version-02-01-9251.mp3-e5017bd7ad292bea8b468d9c33b5a30b.mp3str"
+
+[deps]
+
+source_file="res://Escenes/Menu/musica/no-time-to-die-hartzmann-main-version-02-01-9251.mp3"
+dest_files=[ "res://.import/no-time-to-die-hartzmann-main-version-02-01-9251.mp3-e5017bd7ad292bea8b468d9c33b5a30b.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

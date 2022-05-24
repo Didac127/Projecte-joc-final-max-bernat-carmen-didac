@@ -135,11 +135,6 @@ animations = [ {
 "name": "conjurar",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 104 ), ExtResource( 111 ), ExtResource( 98 ), ExtResource( 110 ), ExtResource( 96 ), ExtResource( 97 ), ExtResource( 107 ), ExtResource( 108 ), ExtResource( 109 ), ExtResource( 105 ), ExtResource( 95 ), ExtResource( 112 ) ],
-"loop": true,
-"name": "parpalleig inactiu",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 39 ), ExtResource( 34 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 35 ), ExtResource( 43 ), ExtResource( 42 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ) ],
 "loop": true,
 "name": "mal",
@@ -153,6 +148,11 @@ animations = [ {
 "frames": [ ExtResource( 81 ), ExtResource( 71 ), ExtResource( 67 ), ExtResource( 77 ), ExtResource( 69 ), ExtResource( 47 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 37 ), ExtResource( 46 ), ExtResource( 32 ), ExtResource( 31 ), ExtResource( 36 ), ExtResource( 38 ), ExtResource( 33 ) ],
 "loop": true,
 "name": "morint",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 104 ), ExtResource( 111 ), ExtResource( 98 ), ExtResource( 110 ), ExtResource( 96 ), ExtResource( 97 ), ExtResource( 107 ), ExtResource( 108 ), ExtResource( 109 ), ExtResource( 105 ), ExtResource( 95 ), ExtResource( 112 ) ],
+"loop": true,
+"name": "parpalleig inactiu",
 "speed": 5.0
 } ]
 
