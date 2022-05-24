@@ -13,7 +13,7 @@
 [ext_resource path="res://Escenes/Personatges principals/Personatge1/PNG Sequences/PNG/Collectable Object/Coin_06.png" type="Texture" id=11]
 [ext_resource path="res://Escenes/Personatges principals/Personatge1/PNG Sequences/PNG/Platformer/Spikes.png" type="Texture" id=12]
 [ext_resource path="res://Escenes/Personatges principals/Personatge1/PNG Sequences/PNG/Environment/Grass_01.png" type="Texture" id=13]
-[ext_resource path="res://Escenes/Personatges principals/Personatge1/Personatgeprincipal1.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Escenes/Personatgeprincipal1.tscn" type="PackedScene" id=14]
 [ext_resource path="res://Escenes/Personatges principals/Personatge1/PNG Sequences/PNG/Environment/Grass_02.png" type="Texture" id=15]
 [ext_resource path="res://Escenes/Personatges principals/Personatge1/PNG Sequences/PNG/Environment/Decor_Ruins_01.png" type="Texture" id=16]
 [ext_resource path="res://Escenes/Personatges principals/Personatge1/PNG Sequences/PNG/Platformer/Wooden_Box.png" type="Texture" id=17]
