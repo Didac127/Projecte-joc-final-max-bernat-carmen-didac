@@ -25,7 +25,7 @@ animations = [ {
 [sub_resource type="CircleShape2D" id=2]
 radius = 197.003
 
-[node name="BolaFoc" type="Area2D"]
+[node name="BolaFoc" type="Area2D" groups=["bola de foc"]]
 scale = Vector2( 0.18, 0.18 )
 script = ExtResource( 5 )
 
