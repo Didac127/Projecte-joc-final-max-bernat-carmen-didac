@@ -274,12 +274,12 @@ scale = Vector2( 0.25, 0.25 )
 script = ExtResource( 211 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 0, -1 )
 frames = SubResource( 1 )
 animation = "Inactiu"
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
-position = Vector2( 236, 268 )
+position = Vector2( 232, 252 )
+enabled = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 2, -15.5 )
