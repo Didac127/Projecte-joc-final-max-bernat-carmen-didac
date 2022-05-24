@@ -69,6 +69,7 @@ func crea_bola_foc():
 	else:
 		$AnimatedSprite.flip_h=false
 		nova_bola.global_position =$Position2D.global_position
+	print(nova_bola.global_position)
 	Global.Boles.add_child(nova_bola)
 	
 	

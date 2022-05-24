@@ -14,6 +14,7 @@ func _ready():
 	$AnimatedSprite3.animation="foc"
 	scale=Vector2(0.001,0.001)
 	posicio_inicial=global_position
+	print(posicio_inicial)
 	var posicio_mouse=get_global_mouse_position()
 	velocitat=posicio_mouse-global_position
 	pendent = velocitat.normalized()
