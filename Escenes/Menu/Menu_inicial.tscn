@@ -21,8 +21,8 @@ anchor_bottom = 1.0
 script = ExtResource( 2 )
 
 [node name="Background" type="Sprite" parent="."]
-position = Vector2( 652, 410 )
-scale = Vector2( 2, 2 )
+position = Vector2( 478, 327 )
+scale = Vector2( 3.01146, 2.7537 )
 texture = ExtResource( 4 )
 __meta__ = {
 "_editor_description_": ""

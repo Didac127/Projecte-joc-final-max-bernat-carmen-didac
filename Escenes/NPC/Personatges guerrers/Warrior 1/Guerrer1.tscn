@@ -222,21 +222,6 @@ animations = [ {
 "name": "Inactiu",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 205 ), ExtResource( 181 ), ExtResource( 184 ), ExtResource( 206 ), ExtResource( 176 ), ExtResource( 199 ), ExtResource( 177 ), ExtResource( 183 ), ExtResource( 174 ), ExtResource( 204 ), ExtResource( 186 ), ExtResource( 175 ), ExtResource( 187 ), ExtResource( 182 ), ExtResource( 188 ), ExtResource( 193 ), ExtResource( 203 ), ExtResource( 189 ), ExtResource( 197 ), ExtResource( 190 ), ExtResource( 207 ), ExtResource( 191 ), ExtResource( 192 ), ExtResource( 194 ), ExtResource( 195 ), ExtResource( 196 ), ExtResource( 200 ), ExtResource( 208 ), ExtResource( 210 ), ExtResource( 209 ) ],
-"loop": true,
-"name": "Caminar",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 158 ), ExtResource( 165 ), ExtResource( 166 ), ExtResource( 168 ), ExtResource( 170 ), ExtResource( 172 ), ExtResource( 171 ), ExtResource( 7 ), ExtResource( 27 ), ExtResource( 11 ), ExtResource( 19 ), ExtResource( 18 ), ExtResource( 23 ), ExtResource( 28 ), ExtResource( 34 ), ExtResource( 17 ), ExtResource( 32 ), ExtResource( 3 ), ExtResource( 26 ), ExtResource( 33 ), ExtResource( 6 ), ExtResource( 30 ), ExtResource( 4 ), ExtResource( 24 ), ExtResource( 22 ), ExtResource( 5 ), ExtResource( 35 ), ExtResource( 20 ), ExtResource( 14 ), ExtResource( 2 ) ],
-"loop": true,
-"name": "Morir",
-"speed": 15.0
-}, {
-"frames": [ ExtResource( 1 ), ExtResource( 25 ), ExtResource( 29 ), ExtResource( 10 ), ExtResource( 21 ), ExtResource( 13 ), ExtResource( 12 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 31 ), ExtResource( 101 ), ExtResource( 98 ), ExtResource( 89 ) ],
-"loop": true,
-"name": "Ferir-se",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 121 ), ExtResource( 138 ), ExtResource( 155 ), ExtResource( 143 ), ExtResource( 122 ), ExtResource( 123 ), ExtResource( 124 ), ExtResource( 179 ), ExtResource( 173 ), ExtResource( 198 ), ExtResource( 185 ), ExtResource( 201 ), ExtResource( 202 ), ExtResource( 178 ), ExtResource( 180 ) ],
 "loop": true,
 "name": "Corre",
@@ -247,20 +232,35 @@ animations = [ {
 "name": "Inactiu parpadejar",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 65 ), ExtResource( 66 ), ExtResource( 68 ), ExtResource( 69 ), ExtResource( 53 ), ExtResource( 55 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 78 ), ExtResource( 82 ), ExtResource( 85 ), ExtResource( 83 ), ExtResource( 84 ) ],
-"loop": true,
-"name": "Atac2",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 77 ), ExtResource( 74 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 76 ), ExtResource( 72 ), ExtResource( 73 ), ExtResource( 75 ), ExtResource( 63 ), ExtResource( 67 ), ExtResource( 54 ), ExtResource( 59 ), ExtResource( 64 ), ExtResource( 58 ), ExtResource( 60 ) ],
 "loop": true,
 "name": "Atac1",
 "speed": 60.0
 }, {
+"frames": [ ExtResource( 158 ), ExtResource( 165 ), ExtResource( 166 ), ExtResource( 168 ), ExtResource( 170 ), ExtResource( 172 ), ExtResource( 171 ), ExtResource( 7 ), ExtResource( 27 ), ExtResource( 11 ), ExtResource( 19 ), ExtResource( 18 ), ExtResource( 23 ), ExtResource( 28 ), ExtResource( 34 ), ExtResource( 17 ), ExtResource( 32 ), ExtResource( 3 ), ExtResource( 26 ), ExtResource( 33 ), ExtResource( 6 ), ExtResource( 30 ), ExtResource( 4 ), ExtResource( 24 ), ExtResource( 22 ), ExtResource( 5 ), ExtResource( 35 ), ExtResource( 20 ), ExtResource( 14 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "Morir",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 65 ), ExtResource( 66 ), ExtResource( 68 ), ExtResource( 69 ), ExtResource( 53 ), ExtResource( 55 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 78 ), ExtResource( 82 ), ExtResource( 85 ), ExtResource( 83 ), ExtResource( 84 ) ],
+"loop": true,
+"name": "Atac2",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 79 ), ExtResource( 80 ), ExtResource( 81 ), ExtResource( 47 ), ExtResource( 44 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 45 ), ExtResource( 48 ), ExtResource( 51 ), ExtResource( 46 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 52 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 163 ), ExtResource( 157 ), ExtResource( 167 ), ExtResource( 162 ), ExtResource( 169 ), ExtResource( 156 ), ExtResource( 159 ), ExtResource( 160 ), ExtResource( 161 ), ExtResource( 164 ) ],
 "loop": true,
 "name": "Parlar",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 1 ), ExtResource( 25 ), ExtResource( 29 ), ExtResource( 10 ), ExtResource( 21 ), ExtResource( 13 ), ExtResource( 12 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 31 ), ExtResource( 101 ), ExtResource( 98 ), ExtResource( 89 ) ],
+"loop": true,
+"name": "Ferir-se",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 205 ), ExtResource( 181 ), ExtResource( 184 ), ExtResource( 206 ), ExtResource( 176 ), ExtResource( 199 ), ExtResource( 177 ), ExtResource( 183 ), ExtResource( 174 ), ExtResource( 204 ), ExtResource( 186 ), ExtResource( 175 ), ExtResource( 187 ), ExtResource( 182 ), ExtResource( 188 ), ExtResource( 193 ), ExtResource( 203 ), ExtResource( 189 ), ExtResource( 197 ), ExtResource( 190 ), ExtResource( 207 ), ExtResource( 191 ), ExtResource( 192 ), ExtResource( 194 ), ExtResource( 195 ), ExtResource( 196 ), ExtResource( 200 ), ExtResource( 208 ), ExtResource( 210 ), ExtResource( 209 ) ],
+"loop": true,
+"name": "Caminar",
+"speed": 10.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]
