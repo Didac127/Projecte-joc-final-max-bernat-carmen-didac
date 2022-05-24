@@ -37,7 +37,7 @@ func _on_Timer_timeout():
 
 
 func _on_BolaFoc_body_entered(body):
-	if global_position.x<(posicio_inicial.x+50) and global_position.x>(posicio_inicial.x-60) and global_position.y<(posicio_inicial.y+10) and global_position.y>(posicio_inicial.y-60):
+	if body.is_in_group("Persoantge principal"):
 		pass
 	else:
 		eliminar_bola=true
