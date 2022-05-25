@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://Imatges/Medieval/Medieval_tiles_free2.png" type="Texture" id=1]
 [ext_resource path="res://Escenes/NPC/Personatges guerrers/Warrior 2/Guerrer2.tscn" type="PackedScene" id=2]
@@ -6,6 +6,8 @@
 [ext_resource path="res://Escenes/Prova.gd" type="Script" id=4]
 [ext_resource path="res://Escenes/Bola_Foc_boss.gd" type="Script" id=5]
 [ext_resource path="res://Escenes/Bola_Foc.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Escenes/Menu/musica/no-time-to-die-hartzmann-main-version-02-01-9251.mp3" type="AudioStream" id=7]
+[ext_resource path="res://Escenes/AudioStreamPlayer.gd" type="Script" id=8]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0.289734, 35.1092, 48, 35.4142, 48, 48, 48, 48, 0, 48 )
@@ -1060,15 +1062,11 @@ color = Color( 0.0823529, 0.0745098, 0.152941, 1 )
 
 [node name="Boles" type="Node2D" parent="."]
 
-[node name="BolaFoc" parent="." groups=["boles de foc boss"] instance=ExtResource( 6 )]
-position = Vector2( -1607, 307 )
-script = ExtResource( 5 )
-
 [node name="BolaFoc2" parent="." groups=["boles de foc boss"] instance=ExtResource( 6 )]
 position = Vector2( -219, 385 )
 scale = Vector2( 0.5, 0.5 )
 script = ExtResource( 5 )
 
-[node name="BolaFoc3" parent="." groups=["boles de foc boss"] instance=ExtResource( 6 )]
-position = Vector2( -828, 434 )
-script = ExtResource( 5 )
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+script = ExtResource( 8 )

@@ -17,11 +17,9 @@ var vida=100
 var enemics_derrotats=0
 
 func _ready():
-	#enemics_derrotats=Global.morts.global_position
 	pass
 
 func _physics_process(delta):
-	#print(enemics_derrotats)
 	if enemics_derrotats>5:
 		get_tree().change_scene("res://Escenes/escena final boss.tscn")
 	if paralitzat==true:
@@ -92,6 +90,8 @@ func _on_Area2D_area_entered(area):
 		nom_guardia=area.get_parent()
 	if area.is_in_group("cop guardia"):
 		cop_guardia=true
+	if area.is_in_group("passar nivell"):
+		get_tree().change_scene("res://Escenes/escena final boss.tscn")
 	if area.is_in_group("boles de foc boss"):
 		vida=vida-10
 		$TextureProgress.value-=10
