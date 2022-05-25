@@ -89,6 +89,7 @@ func _on_AnimatedSprite_animation_finished():
 		atac_dreta=false
 		atac_esquerre=false
 	if $AnimatedSprite.animation=="Morir":
+		#Global.morts.global_position+=1
 		queue_free()
 
 func _on_Area2D_body_exited(body):

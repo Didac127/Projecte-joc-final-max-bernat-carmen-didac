@@ -14,9 +14,16 @@ var posiscio_guardia=Vector2(0,0)
 var nom_guardia=""
 var cop_guardia=false
 var vida=100
+var enemics_derrotats=0
 
+func _ready():
+	#enemics_derrotats=Global.morts.global_position
+	pass
 
 func _physics_process(delta):
+	#print(enemics_derrotats)
+	if enemics_derrotats>5:
+		get_tree().change_scene("res://Escenes/escena final boss.tscn")
 	if paralitzat==true:
 		pass
 	else:
@@ -69,7 +76,6 @@ func crea_bola_foc():
 	else:
 		$AnimatedSprite.flip_h=false
 		nova_bola.global_position =$Position2D.global_position
-	print(nova_bola.global_position)
 	Global.Boles.add_child(nova_bola)
 	
 	
@@ -86,6 +92,11 @@ func _on_Area2D_area_entered(area):
 		nom_guardia=area.get_parent()
 	if area.is_in_group("cop guardia"):
 		cop_guardia=true
+	if area.is_in_group("boles de foc boss"):
+		vida=vida-10
+		$TextureProgress.value-=10
+		if vida<=0:
+			get_tree().change_scene("res://Escenes/Menu/Menu_inicial.tscn")
 
 func _on_Area2D_area_exited(area):
 	if area.is_in_group("area de gravetat"):

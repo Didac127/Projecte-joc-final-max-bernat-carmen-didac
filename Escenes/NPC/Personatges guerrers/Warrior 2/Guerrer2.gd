@@ -89,7 +89,7 @@ func _on_AnimatedSprite_animation_finished():
 		atac_dreta=false
 		atac_esquerre=false
 	if $AnimatedSprite.animation=="Morir":
-		queue_free()
+		get_tree().change_scene("res://Escenes/Menu/Menu_inicial.tscn")
 
 func _on_Area2D_body_exited(body):
 	if body.is_in_group("Persoantge principal"):
