@@ -2711,27 +2711,21 @@ tile_data = PoolIntArray( -983022, 37, 0, -983021, 38, 0, -983020, 38, 0, -98301
 script = ExtResource( 12 )
 
 [node name="NPC6" parent="." instance=ExtResource( 11 )]
-visible = false
 position = Vector2( 307, 67 )
 
 [node name="NPC5" parent="." instance=ExtResource( 11 )]
-visible = false
 position = Vector2( 2275, 159 )
 
 [node name="NPC4" parent="." instance=ExtResource( 11 )]
-visible = false
 position = Vector2( 1368, -146 )
 
 [node name="NPC3" parent="." instance=ExtResource( 11 )]
-visible = false
 position = Vector2( 2151, -43 )
 
 [node name="NPC2" parent="." instance=ExtResource( 11 )]
-visible = false
 position = Vector2( 641, -389 )
 
 [node name="NPC" parent="." instance=ExtResource( 11 )]
-visible = false
 position = Vector2( 1116, 495 )
 
 [node name="Personatge_principal" parent="." instance=ExtResource( 4 )]
